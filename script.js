@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
+
     // --- Elements ---
     const openModalBtn = document.getElementById('openModalBtn');
     const closeModalBtn = document.getElementById('closeModalBtn');
@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const modal = document.getElementById('registerModal');
     const registerForm = document.getElementById('registerForm');
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-    
+
     // --- Modal Logic ---
     function openModal() {
         modal.classList.remove('hidden');
@@ -38,11 +38,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (registerForm) {
         registerForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            
+
             // Simulate API call / processing
             const btn = registerForm.querySelector('button[type="submit"]');
             const originalText = btn.innerText;
-            
+
             btn.innerText = 'Registering...';
             btn.disabled = true;
 
@@ -57,17 +57,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- Mobile Menu (Simple Alert for demo, or expansion) ---
-    if (mobileMenuBtn) {
+    // --- Mobile Menu ---
+    const mobileNav = document.querySelector('.mobile-nav');
+
+    if (mobileMenuBtn && mobileNav) {
         mobileMenuBtn.addEventListener('click', () => {
-            // For this single landing page, we might just scroll to top or show links
-            // Implementing a simple toggle is better if we had a drawer.
-            // For now, let's just alert or log, or toggle a class if we added CSS for it.
-            console.log('Mobile menu clicked');
-            // Check if we want to expand nav:
-            // const nav = document.querySelector('.desktop-nav');
-            // nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
-            // (Requires CSS adjustment for mobile nav specifically)
+            if (mobileNav.classList.contains('hidden')) {
+                mobileNav.classList.remove('hidden');
+            } else {
+                mobileNav.classList.add('hidden');
+            }
+        });
+
+        // Close menu when clicking a link
+        mobileNav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.add('hidden');
+            });
         });
     }
 

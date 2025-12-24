@@ -604,3 +604,60 @@ p {
         display: block;
     }
 }
+
+/* Mobile Navigation */
+.mobile-nav {
+    display: none;
+    /* Hidden by default on desktop */
+    position: absolute;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    flex-direction: column;
+    padding: var(--space-md) 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid var(--border-color);
+    animation: slideDown 0.3s ease-out;
+}
+
+.mobile-nav.hidden {
+    display: none !important;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.mobile-nav a {
+    padding: 1rem var(--space-lg);
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.mobile-nav a:last-child {
+    border-bottom: none;
+}
+
+.mobile-nav a:hover {
+    background-color: var(--brand-gray);
+    color: var(--accent-primary);
+}
+
+@media (max-width: 768px) {
+
+    /* Show mobile nav logic handled via JS toggling display/class */
+    /* Ensure it CAN be displayed */
+    .mobile-nav:not(.hidden) {
+        display: flex;
+    }
+}
