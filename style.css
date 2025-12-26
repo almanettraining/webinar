@@ -392,12 +392,16 @@ p {
 .btn-primary {
     background-color: var(--accent-primary);
     color: white;
-    padding: 12px 24px;
+    padding: 10px 24px;
     border-radius: 6px;
     font-weight: 600;
     font-size: 1rem;
     width: 100%;
     transition: background-color 0.2s;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-primary:hover {
@@ -477,6 +481,12 @@ p {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     border: 1px solid var(--border-color);
     margin-top: var(--space-xl);
+}
+
+.registration-card-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--space-xl) var(--space-md);
 }
 
 .register-header {

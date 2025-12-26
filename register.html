@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Webinar: Python Full Stack Development | Register</title>
+    <meta name="description"
+        content="Master Python Full Stack Development with Almanet – India’s IT Solutions & Training Experts. Register for our free webinar.">
+    <link rel="stylesheet" href="style.css?v=almanet">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header / Navigation -->
+    <header class="main-header">
+        <div class="container">
+            <img src="https://almanet.in/wp-content/uploads/2022/03/Almanet-logo-220x47-1.png"
+                alt="Almanet Professional Services Logo" style="height: 40px;">
+            <nav class="desktop-nav">
+                <a href="index.html">Home</a>
+                <a href="#">Webinars</a>
+                <a href="https://almanet.in/sap-abap-on-hana-training/">Courses</a>
+                <a href="https://almanet.in/contact/" class="btn-outline">Contact Us</a>
+            </nav>
+            <nav class="mobile-nav hidden">
+                <a href="index.html">Home</a>
+                <a href="#">Webinar</a>
+                <a href="https://almanet.in/sap-abap-on-hana-training/">Courses</a>
+                <a href="https://almanet.in/contact/">Contact Us</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+    <div class="registration-card-wrapper">
+        <div class="registration-container">
+            <div class="register-header">
+                <h3 class="section-title">Reserve Your Spot</h3>
+                <p class="lead-text">Fill out the form below to secure your seat for this free webinar.</p>
+            </div>
+            <form id="registerForm" class="inline-form" novalidate>
+                <!-- Fields are populated via HTML for structure, JS for validation -->
+                <div class="form-row">
+                    <div class="form-group half">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        <span class="error-msg hidden">Please enter your full name.</span>
+                    </div>
+                    <div class="form-group half">
+                        <label for="email">Work Email *</label>
+                        <input type="email" id="email" name="email" placeholder="john@company.com" required>
+                        <span class="error-msg hidden">Please enter a valid email address.</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" placeholder="9876543210" required maxlength="15">
+                    <span class="error-msg hidden">Please enter a valid phone number.</span>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="status">Current Status</label>
+                        <select id="status" name="status">
+                            <option value="" disabled selected>Select Status</option>
+                            <option value="Student">Student</option>
+                            <option value="Professional">Professional</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-grid-3">
+                    <div class="form-group">
+                        <label for="college">College Name</label>
+                        <input type="text" id="college" name="college" placeholder="College Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="course">Course</label>
+                        <input type="text" id="course" name="course" placeholder="e.g. B.Tech">
+                    </div>
+                    <div class="form-group">
+                        <label for="branch">Branch</label>
+                        <input type="text" id="branch" name="branch" placeholder="e.g. CS">
+                    </div>
+                </div>
+                <div class="form-group" style="max-width: 150px;">
+                    <label for="passingYear">Passing Year</label>
+                    <input type="number" id="passingYear" name="passingYear" placeholder="2025" min="2000" max="2030">
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary btn-block submit-btn">Confirm Registration</button>
+                </div>
+            </form>
+            <div id="successMessage" class="success-message hidden">
+                <i class="fa-solid fa-circle-check"></i>
+                <h4>Registration Successful!</h4>
+                <p>You’re registered successfully. Webinar details will be shared via email.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer" id="footer-contact">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h5>Almanet Professional Services</h5>
+                <p>Empowering the next generation of full stack developers with practical, industry-grade skills.</p>
+            </div>
+            <div class="footer-col">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">All Events</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Contact</h5>
+                <p style="margin-bottom: 0.5rem;"><i class="fa-solid fa-location-dot"></i> 1 Snehalataganj, Indore, MP
+                </p>
+                <p style="margin-bottom: 0.5rem;"><i class="fa-solid fa-envelope"></i> info@almanet.in</p>
+                <p><i class="fa-solid fa-phone"></i> +91 6264643660</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Almanet Professional Services. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

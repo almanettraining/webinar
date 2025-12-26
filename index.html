@@ -138,77 +138,7 @@
                 </div>
             </section>
 
-            <!-- Registration Section (Inline) -->
-            <section class="section-block" id="register-section">
-                <div class="registration-container">
-                    <div class="register-header">
-                        <h3 class="section-title">Reserve Your Spot</h3>
-                        <p class="lead-text">Fill out the form below to secure your seat for this free webinar.</p>
-                    </div>
 
-                    <form id="registerForm" class="inline-form" novalidate>
-                        <!-- Fields are populated via HTML for structure, JS for validation -->
-                        <div class="form-row">
-                            <div class="form-group half">
-                                <label for="name">Full Name *</label>
-                                <input type="text" id="name" name="name" placeholder="John Doe" required>
-                                <span class="error-msg hidden">Please enter your full name.</span>
-                            </div>
-                            <div class="form-group half">
-                                <label for="email">Work Email *</label>
-                                <input type="email" id="email" name="email" placeholder="john@company.com" required>
-                                <span class="error-msg hidden">Please enter a valid email address.</span>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="phone">Phone Number *</label>
-                            <input type="tel" id="phone" name="phone" placeholder="9876543210" required maxlength="15">
-                            <span class="error-msg hidden">Please enter a valid phone number.</span>
-                        </div>
-
-                        <!-- Optional Fields Grid -->
-                        <div class="form-grid-3">
-                            <div class="form-group">
-                                <label for="status">Current Status</label>
-                                <select id="status" name="status">
-                                    <option value="" disabled selected>Select Status</option>
-                                    <option value="Student">Student</option>
-                                    <option value="Professional">Professional</option>
-                                    <option value="Other">Other</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="college">College Name</label>
-                                <input type="text" id="college" name="college" placeholder="College Name">
-                            </div>
-                            <div class="form-group">
-                                <label for="course">Course</label>
-                                <input type="text" id="course" name="course" placeholder="e.g. B.Tech">
-                            </div>
-                            <div class="form-group">
-                                <label for="branch">Branch</label>
-                                <input type="text" id="branch" name="branch" placeholder="e.g. CS">
-                            </div>
-                            <div class="form-group">
-                                <label for="passingYear">Passing Year</label>
-                                <input type="number" id="passingYear" name="passingYear" placeholder="2025" min="2000"
-                                    max="2030">
-                            </div>
-                        </div>
-
-                        <div class="form-actions">
-                            <button type="submit" class="btn-primary btn-block submit-btn">Confirm Registration</button>
-                        </div>
-                    </form>
-
-                    <div id="successMessage" class="success-message hidden">
-                        <i class="fa-solid fa-circle-check"></i>
-                        <h4>Registration Successful!</h4>
-                        <p>You’re registered successfully. Webinar details will be shared via email.</p>
-                    </div>
-                </div>
-            </section>
 
         </main>
 
@@ -276,9 +206,7 @@
 
                     <div class="card-actions">
                         <div style="text-align:center; margin-top: var(--space-md);">
-                            <a href="#register-section" class="scroll-trigger"
-                                style="display:inline-block; border:1px solid var(--border-color); border-radius: var(--radius-md); padding:8px 16px; text-decoration:none; color: var(--text-primary);">Register
-                                Now</a>
+                            <a href="register.html" class="btn-primary" target="_blank">Register Now</a>
                         </div>
                         <p class="seats-left"><i class="fa-solid fa-fire"></i> Few Spots Left!</p>
                     </div>
