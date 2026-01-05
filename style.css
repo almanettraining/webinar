@@ -714,3 +714,26 @@ p {
         display: flex;
     }
 }
+
+.accordion-btn {
+    background: none;
+    border: none;
+    color: #2563eb;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.accordion-btn .arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.learn-card.active .arrow {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    margin-top: 10px;
+}

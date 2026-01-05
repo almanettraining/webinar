@@ -157,3 +157,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
+document.querySelectorAll('.accordion-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const card = btn.closest('.learn-card');
+        const content = card.querySelector('.accordion-content');
+
+        card.classList.toggle('active');
+        content.classList.toggle('hidden');
+    });
+});
