@@ -157,12 +157,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     // --- Curriculum Accordion ---
         document.querySelectorAll('.accordion-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const card = btn.closest('.learn-card');
-                const content = card.querySelector('.accordion-content');
+                btn.addEventListener('click', () => {
+                const currentCard = btn.closest('.learn-card');
+                const currentContent = currentCard.querySelector('.accordion-content');
 
-                card.classList.toggle('active');
-                content.classList.toggle('hidden');
+                document.querySelectorAll('.learn-card').forEach(card => {
+                    if (card !== currentCard) {
+                        card.classList.remove('active');
+                        const content = card.querySelector('.accordion-content');
+                        if (content) content.classList.add('hidden');
+                    }
+                });
+                currentCard.classList.toggle('active');
+                currentContent.classList.toggle('hidden');
             });
         });
 
