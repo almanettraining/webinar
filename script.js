@@ -128,17 +128,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (mobileMenuBtn && mobileNav) {
         mobileMenuBtn.addEventListener('click', () => {
-            if (mobileNav.classList.contains('hidden')) {
-                mobileNav.classList.remove('hidden');
-            } else {
-                mobileNav.classList.add('hidden');
-            }
+            mobileNav.classList.toggle('hidden');
         });
 
-        // Close menu when clicking a link
         mobileNav.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
-                mobileNav.classList.add('hidden');
+                setTimeout(() => {
+                    mobileNav.classList.add('hidden');
+                }, 150);
             });
         });
     }
@@ -146,13 +143,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Smooth Scroll for Anchor Links ---
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
+            const targetId = this.getAttribute('href');
+
+            if (targetId === '#' || targetId === '#!') return;
+
+            const target = document.querySelector(targetId);
+            if (!target) return;
+
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth'
-                });
-            }
+            target.scrollIntoView({
+                behavior: 'smooth'
+            });
         });
     });
     // --- Curriculum Accordion ---
