@@ -45,62 +45,139 @@
         </div>
     </header>
 
+    <!-- Registration Hero Section -->
+    <section class="registration-hero">
+        <div class="container">
+            <div class="registration-hero-content">
+                <div class="registration-icon-wrapper">
+                    <i class="fa-solid fa-calendar-check"></i>
+                </div>
+                <h1 class="registration-hero-title">Reserve Your Spot</h1>
+                <p class="registration-hero-subtitle">Join our free Python Full Stack Development webinar and take the first step towards your tech career.</p>
+                <div class="registration-benefits">
+                    <div class="benefit-item">
+                        <i class="fa-solid fa-check-circle"></i>
+                        <span>Free Registration</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fa-solid fa-check-circle"></i>
+                        <span>45-Minute Live Session</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fa-solid fa-check-circle"></i>
+                        <span>Expert Guidance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <div class="registration-card-wrapper">
         <div class="registration-container">
             <div class="register-header">
-                <h3 class="section-title">Reserve Your Spot</h3>
-                <p class="lead-text">Fill out the form below to secure your seat for this free webinar.</p>
+                <h2 class="register-form-title">Registration Form</h2>
+                <p class="register-form-subtitle">Please fill in your details to complete your registration.</p>
             </div>
             <form id="registerForm" class="inline-form" novalidate>
                 <!-- Fields are populated via HTML for structure, JS for validation -->
-                <div class="form-row">
-                    <div class="form-group half">
-                        <label for="name">Full Name *</label>
-                        <input type="text" id="name" name="name" placeholder="John Doe" required>
-                        <span class="error-msg hidden">Please enter your full name.</span>
-                    </div>
-                    <div class="form-group half">
-                        <label for="email">Work Email *</label>
-                        <input type="email" id="email" name="email" placeholder="john@company.com" required>
-                        <span class="error-msg hidden">Please enter a valid email address.</span>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number *</label>
-                    <input type="tel" id="phone" name="phone" placeholder="9876543210" required maxlength="15">
-                    <span class="error-msg hidden">Please enter a valid phone number.</span>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="status">Current Status</label>
-                        <select id="status" name="status">
-                            <option value="" disabled selected>Select Status</option>
-                            <option value="Student">Student</option>
-                            <option value="Professional">Professional</option>
-                            <option value="Other">Other</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-grid-3">
-                    <div class="form-group">
-                        <label for="college">College Name</label>
-                        <input type="text" id="college" name="college" placeholder="College Name">
+                <div class="form-section">
+                    <h3 class="form-section-title">
+                        <i class="fa-solid fa-user"></i>
+                        Personal Information
+                    </h3>
+                    <div class="form-row">
+                        <div class="form-group half">
+                            <label for="name">
+                                <i class="fa-solid fa-user"></i>
+                                Full Name *
+                            </label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                            <span class="error-msg hidden">Please enter your full name.</span>
+                        </div>
+                        <div class="form-group half">
+                            <label for="email">
+                                <i class="fa-solid fa-envelope"></i>
+                                Work Email *
+                            </label>
+                            <input type="email" id="email" name="email" placeholder="your.email@company.com" required>
+                            <span class="error-msg hidden">Please enter a valid email address.</span>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="course">Course</label>
-                        <input type="text" id="course" name="course" placeholder="e.g. B.Tech">
-                    </div>
-                    <div class="form-group">
-                        <label for="branch">Branch</label>
-                        <input type="text" id="branch" name="branch" placeholder="e.g. CS">
+                        <label for="phone">
+                            <i class="fa-solid fa-phone"></i>
+                            Phone Number *
+                        </label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your 10-digit phone number" required maxlength="15">
+                        <span class="error-msg hidden">Please enter a valid phone number.</span>
                     </div>
                 </div>
-                <div class="form-group" style="max-width: 150px;">
-                    <label for="passingYear">Passing Year</label>
-                    <input type="number" id="passingYear" name="passingYear" placeholder="2025" min="2000" max="2030">
+                <div class="form-section">
+                    <h3 class="form-section-title">
+                        <i class="fa-solid fa-briefcase"></i>
+                        Professional Details
+                    </h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="status">
+                                <i class="fa-solid fa-user-tag"></i>
+                                Current Status
+                            </label>
+                            <select id="status" name="status">
+                                <option value="" disabled selected>Select your current status</option>
+                                <option value="Student">Student</option>
+                                <option value="Professional">Professional</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3 class="form-section-title">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        Educational Background <span class="optional-badge">(Optional)</span>
+                    </h3>
+                    <div class="form-grid-3">
+                        <div class="form-group">
+                            <label for="college">
+                                <i class="fa-solid fa-building-columns"></i>
+                                College Name
+                            </label>
+                            <input type="text" id="college" name="college" placeholder="Enter college name">
+                        </div>
+                        <div class="form-group">
+                            <label for="course">
+                                <i class="fa-solid fa-book"></i>
+                                Course
+                            </label>
+                            <input type="text" id="course" name="course" placeholder="e.g. B.Tech, B.Sc">
+                        </div>
+                        <div class="form-group">
+                            <label for="branch">
+                                <i class="fa-solid fa-code-branch"></i>
+                                Branch
+                            </label>
+                            <input type="text" id="branch" name="branch" placeholder="e.g. Computer Science">
+                        </div>
+                    </div>
+                    <div class="form-group passing-year-group">
+                        <label for="passingYear">
+                            <i class="fa-solid fa-calendar"></i>
+                            Passing Year
+                        </label>
+                        <input type="number" id="passingYear" name="passingYear" placeholder="2025" min="2000" max="2030">
+                    </div>
                 </div>
                 <div class="form-actions">
-                    <button type="submit" class="btn-primary btn-block submit-btn">Confirm Registration</button>
+                    <button type="submit" class="btn-primary btn-block submit-btn">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span>Confirm Registration</span>
+                    </button>
+                    <p class="form-note">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        Your information is secure and will only be used for webinar communication.
+                    </p>
                 </div>
             </form>
             <div id="successMessage" class="success-message hidden">

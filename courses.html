@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Courses | Almanet Professional Services</title>
+    <meta name="description" content="Explore our industry-ready Python Full Stack Development courses designed to build real-world skills.">
+    <link rel="stylesheet" href="style.css?v=almanet">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<!-- HEADER (same as index.html) -->
+<header class="main-header">
+    <div class="container">
+        <img src="https://almanet.in/wp-content/uploads/2022/03/Almanet-logo-220x47-1.png" alt="Almanet Professional Services Logo" style="height:40px;">
+        
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+            <a href="./index.html">Home</a>
+            <a href="./register.html">Webinars</a>
+            <a href="./courses.html" class="active">Courses</a>
+            <a href="https://almanet.in/contact/" class="btn-outline">Contact Us</a>
+        </nav>
+
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav hidden">
+            <a href="./index.html">Home</a>
+            <a href="./register.html">Webinars</a>
+            <a href="./courses.html">Courses</a>
+            <a href="https://almanet.in/contact/">Contact Us</a>
+        </nav>
+
+        <button class="mobile-menu-btn" aria-label="Toggle Menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+</header>
+
+<!-- Courses Hero Section -->
+<section class="courses-hero">
+    <div class="container">
+        <div class="courses-hero-content">
+            <h1 class="courses-hero-title">Our Courses</h1>
+            <p class="courses-hero-subtitle">Industry-ready programs designed to build real-world skills and prepare you for a successful career in Python Full Stack Development.</p>
+        </div>
+    </div>
+</section>
+
+<main class="container courses-main" style="padding-top: var(--space-xl); padding-bottom: var(--space-xl);">
+
+<div class="learning-grid" id="coursesGrid">
+
+    <!-- Full Stack Python -->
+    <div class="learn-card course-card" data-course="python-fullstack">
+        <div class="course-header">
+            <i class="fa-solid fa-code"></i>
+            <h4>Full Stack Python Development</h4>
+        </div>
+
+        <p class="course-summary">
+            End-to-end web development using Python, Django/FastAPI,
+            databases, and frontend basics with real-world projects.
+        </p>
+
+        <div class="course-meta">
+            <span><i class="fa-regular fa-clock"></i> 6 Months</span>
+            <span><i class="fa-solid fa-signal"></i> Beginner → Advanced</span>
+        </div>
+
+        <button class="btn-primary view-details-btn">View Details</button>
+    </div>
+
+    <!-- Backend -->
+    <div class="learn-card course-card" data-course="backend-python">
+        <div class="course-header">
+            <i class="fa-brands fa-python"></i>
+            <h4>Backend with Python & Django</h4>
+        </div>
+
+        <p class="course-summary">
+            Core Python + OOP concepts, Django fundamentals,
+            and building scalable CRUD applications.
+        </p>
+
+        <div class="course-meta">
+            <span><i class="fa-regular fa-clock"></i> 4 Months</span>
+            <span><i class="fa-solid fa-signal"></i> Beginner → Intermediate</span>
+        </div>
+
+        <button class="btn-primary view-details-btn">View Details</button>
+    </div>
+
+    <!-- Database -->
+    <div class="learn-card course-card" data-course="database-orm">
+        <div class="course-header">
+            <i class="fa-solid fa-database"></i>
+            <h4>Database & ORM</h4>
+        </div>
+
+        <p class="course-summary">
+            Database integration (MySQL) and Django ORM optimization.
+        </p>
+
+        <div class="course-meta">
+            <span><i class="fa-regular fa-clock"></i> 2 Months</span>
+            <span><i class="fa-solid fa-signal"></i> Beginner</span>
+        </div>
+
+        <button class="btn-primary view-details-btn">View Details</button>
+    </div>
+
+    <!-- Frontend -->
+    <div class="learn-card course-card" data-course="frontend">
+        <div class="course-header">
+            <i class="fa-brands fa-html5"></i>
+            <h4>Frontend Essentials</h4>
+        </div>
+
+        <p class="course-summary">
+            HTML, CSS & JavaScript basics, responsive UI,
+            and frontend–backend integration.
+        </p>
+
+        <div class="course-meta">
+            <span><i class="fa-regular fa-clock"></i> 3 Months</span>
+            <span><i class="fa-solid fa-signal"></i> Beginner</span>
+        </div>
+
+        <button class="btn-primary view-details-btn">View Details</button>
+    </div>
+
+    <!-- Professional Readiness -->
+    <div class="learn-card course-card" data-course="professional">
+        <div class="course-header">
+            <i class="fa-solid fa-briefcase"></i>
+            <h4>Professional Readiness</h4>
+        </div>
+
+        <p class="course-summary">
+            Real-world workflows, Git/GitHub, resume building,
+            and interview preparation.
+        </p>
+
+        <div class="course-meta">
+            <span><i class="fa-regular fa-clock"></i> 1 Month</span>
+            <span><i class="fa-solid fa-signal"></i> All Levels</span>
+        </div>
+
+        <button class="btn-primary view-details-btn">View Details</button>
+    </div>
+
+</div>
+
+</main>
+
+    <footer class="main-footer" id="footer-contact">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h5>Almanet Professional Services</h5>
+                <p>Empowering the next generation of full stack developers with practical, industry-grade skills.</p>
+            </div>
+            <div class="footer-col">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">All Events</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Contact</h5>
+                <p style="margin-bottom: 0.5rem;"><i class="fa-solid fa-location-dot"></i> 1 Snehalataganj, Indore, MP
+                </p>
+                <p style="margin-bottom: 0.5rem;"><i class="fa-solid fa-envelope"></i> info@almanet.in</p>
+                <p><i class="fa-solid fa-phone"></i> +91 6264643660</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Almanet Professional Services. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Course Details Modal will be inserted by JavaScript -->
+    
+    <script src="script.js"></script>
+</body>
+</html>
