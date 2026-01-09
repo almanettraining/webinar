@@ -140,6 +140,29 @@ document.addEventListener('DOMContentLoaded', () => {
                 }, 150);
             });
         });
+
+        // Mobile courses dropdown toggle
+        const mobileCoursesToggle = mobileNav.querySelector('.mobile-courses-toggle');
+        const mobileCoursesDropdown = mobileNav.querySelector('.mobile-courses-dropdown');
+
+        if (mobileCoursesToggle && mobileCoursesDropdown) {
+            mobileCoursesToggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                const isOpen = mobileCoursesDropdown.classList.toggle('open');
+                mobileCoursesToggle.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            // Close dropdown when a course link is tapped
+            mobileCoursesDropdown.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileCoursesDropdown.classList.remove('open');
+                    mobileCoursesToggle.setAttribute('aria-expanded', 'false');
+                    setTimeout(() => {
+                        mobileNav.classList.add('hidden');
+                    }, 150);
+                });
+            });
+        }
     }
 
     // --- Smooth Scroll for Anchor Links ---
@@ -175,6 +198,25 @@ document.addEventListener('DOMContentLoaded', () => {
             currentContent.classList.toggle('hidden');
         });
     });
+
+    // --- Desktop Courses Dropdown (accessibility + click support) ---
+    const desktopCoursesToggle = document.querySelector('.nav-courses-toggle');
+    const desktopCoursesItem = document.querySelector('.nav-has-dropdown');
+
+    if (desktopCoursesToggle && desktopCoursesItem) {
+        desktopCoursesToggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            const isOpen = desktopCoursesItem.classList.toggle('open');
+            desktopCoursesToggle.setAttribute('aria-expanded', String(isOpen));
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!desktopCoursesItem.contains(e.target)) {
+                desktopCoursesItem.classList.remove('open');
+                desktopCoursesToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+    }
 
     // --- Course Details Modal ---
     const courseData = {

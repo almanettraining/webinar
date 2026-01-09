@@ -27,7 +27,36 @@
             <nav class="desktop-nav">
                 <a href="./index.html">Home</a>
                 <a href="./register.html">Webinars</a>
-                <a href="./index.html#curriculum">Courses</a>
+
+                <div class="nav-item nav-has-dropdown">
+                    <button
+                        type="button"
+                        class="nav-link nav-courses-toggle"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >
+                        Courses
+                        <i class="fa-solid fa-chevron-down nav-caret"></i>
+                    </button>
+                    <div class="nav-dropdown nav-courses-dropdown">
+                        <a href="./courses.html#fullstack-python" data-course-target="fullstack-python">
+                            Full Stack Python Development
+                        </a>
+                        <a href="./courses.html#backend-python" data-course-target="backend-python">
+                            Backend with Python &amp; Django
+                        </a>
+                        <a href="./courses.html#frontend" data-course-target="frontend">
+                            Frontend Essentials
+                        </a>
+                        <a href="./courses.html#database" data-course-target="database">
+                            Database &amp; ORM
+                        </a>
+                        <a href="./courses.html#professional" data-course-target="professional">
+                            Professional Readiness
+                        </a>
+                    </div>
+                </div>
+
                 <a href="https://almanet.in/contact/" class="btn-outline">Contact Us</a>
             </nav>
 
@@ -35,7 +64,34 @@
             <nav class="mobile-nav hidden">
                 <a href="./index.html">Home</a>
                 <a href="./register.html">Webinars</a>
-                <a href="./index.html#curriculum">Courses</a>
+
+                <button
+                    type="button"
+                    class="mobile-courses-toggle"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                >
+                    Courses
+                    <i class="fa-solid fa-chevron-down nav-caret"></i>
+                </button>
+                <div class="mobile-courses-dropdown">
+                    <a href="./courses.html#fullstack-python" class="mobile-course-link" data-course-target="fullstack-python">
+                        Full Stack Python Development
+                    </a>
+                    <a href="./courses.html#backend-python" class="mobile-course-link" data-course-target="backend-python">
+                        Backend with Python &amp; Django
+                    </a>
+                    <a href="./courses.html#frontend" class="mobile-course-link" data-course-target="frontend">
+                        Frontend Essentials
+                    </a>
+                    <a href="./courses.html#database" class="mobile-course-link" data-course-target="database">
+                        Database &amp; ORM
+                    </a>
+                    <a href="./courses.html#professional" class="mobile-course-link" data-course-target="professional">
+                        Professional Readiness
+                    </a>
+                </div>
+
                 <a href="https://almanet.in/contact/">Contact Us</a>
             </nav>
 
