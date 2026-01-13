@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Almanet Professional Services</title>
+    <meta name="description" content="Learn more about Almanet Professional Services, our expertise, and leadership team.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="main-header">
+    <div class="container">
+        <img src="https://almanet.in/wp-content/uploads/2022/03/Almanet-logo-220x47-1.png"
+             alt="Almanet Professional Services Logo" style="height:40px;">
+
+        <nav class="desktop-nav">
+            <a href="./index.html">Home</a>
+            <a href="./about.html" class="active">About</a>
+
+            <!-- Services Dropdown -->
+            <div class="nav-item nav-has-dropdown nav-services">
+                <button type="button" class="nav-link nav-services-toggle" aria-haspopup="true" aria-expanded="false">
+                    Services
+                    <i class="fa-solid fa-chevron-down nav-caret"></i>
+                </button>
+                <div class="nav-dropdown nav-services-dropdown">
+                    <a href="./services.html#software-development">Software Development</a>
+                    <a href="./services.html#it-consulting">IT Consulting</a>
+                    <a href="./services.html#training">Corporate Training</a>
+                    <a href="./services.html#support">Support &amp; Maintenance</a>
+                </div>
+            </div>
+
+            <!-- Courses Dropdown (unchanged) -->
+            <div class="nav-item nav-has-dropdown">
+                <button type="button" class="nav-link nav-courses-toggle">
+                    Courses <i class="fa-solid fa-chevron-down nav-caret"></i>
+                </button>
+                <div class="nav-dropdown nav-courses-dropdown">
+                    <a href="./courses.html#fullstack-python">Full Stack Python Development</a>
+                    <a href="./courses.html#backend-python">Backend with Python & Django</a>
+                    <a href="./courses.html#frontend">Frontend Essentials</a>
+                    <a href="./courses.html#database">Database & ORM</a>
+                    <a href="./courses.html#professional">Professional Readiness</a>
+                </div>
+            </div>
+
+            <!-- Events Dropdown -->
+            <div class="nav-item nav-has-dropdown nav-events">
+                <button type="button" class="nav-link nav-events-toggle" aria-haspopup="true" aria-expanded="false">
+                    Events
+                    <i class="fa-solid fa-chevron-down nav-caret"></i>
+                </button>
+                <div class="nav-dropdown nav-events-dropdown">
+                    <a href="./register.html">Python Full Stack Webinar (Jan 2026)</a>
+                    <a href="./register.html">Django Best Practices Workshop</a>
+                    <a href="./register.html">Career Q&amp;A for Freshers</a>
+                </div>
+            </div>
+
+            <a href="https://almanet.in/contact/" class="btn-outline">Contact Us</a>
+        </nav>
+
+        <button class="mobile-menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="courses-hero">
+    <div class="container">
+        <div class="courses-hero-content">
+            <h1 class="courses-hero-title">About Almanet</h1>
+            <p class="courses-hero-subtitle">
+                Empowering individuals and organisations with practical, industry-grade IT training and trusted technology services.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<main class="container" style="padding: var(--space-xl) 0;">
+
+    <!-- Company Overview -->
+    <section class="section-block" aria-labelledby="about-overview-title">
+        <h2 id="about-overview-title" class="section-title">Who We Are</h2>
+        <p class="lead-text">Almanet Professional Services delivers practical IT solutions and industry-focused training. We combine years of enterprise delivery experience with hands-on education to help learners and organisations succeed.</p>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="section-block" aria-labelledby="mission-vision-title">
+        <h2 id="mission-vision-title" class="section-title">Mission &amp; Vision</h2>
+        <div class="learning-grid">
+            <div class="learn-card">
+                <h4>Our Mission</h4>
+                <p>Equip students and early-career professionals with job-ready technical skills through project-driven learning, mentorship, and real-world workflows.</p>
+                <ul class="check-list" style="margin-top:.5rem;">
+                    <li><i class="fa-solid fa-check-circle"></i> Outcome-first curriculum design</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Industry projects and reviews</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Career guidance and interview prep</li>
+                </ul>
+            </div>
+            <div class="learn-card">
+                <h4>Our Vision</h4>
+                <p>Be a trusted bridge between industry and talent—delivering workforce-ready training and reliable technology services.</p>
+                <ul class="check-list" style="margin-top:.5rem;">
+                    <li><i class="fa-solid fa-check-circle"></i> Strong industry collaborations</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Scalable programs and tooling</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Continuous upskilling ecosystem</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Approach -->
+    <section class="section-block" aria-labelledby="learning-approach-title">
+        <h2 id="learning-approach-title" class="section-title">Our Learning Approach</h2>
+        <p class="lead-text">We emphasise pragmatic, project-centric learning aligned to how modern teams build and ship software.</p>
+        <div class="learning-grid">
+            <div class="learn-card">
+                <div class="course-header"><i class="fa-solid fa-code"></i><h4>Hands-on Projects</h4></div>
+                <p>Build real features—APIs, auth, databases, and responsive UIs—with feedback loops and demo days.</p>
+            </div>
+            <div class="learn-card">
+                <div class="course-header"><i class="fa-solid fa-diagram-project"></i><h4>Industry Workflow</h4></div>
+                <p>Version control, issue tracking, code reviews, and deployment practices integrated into the program.</p>
+            </div>
+            <div class="learn-card">
+                <div class="course-header"><i class="fa-solid fa-people-group"></i><h4>Mentorship</h4></div>
+                <p>Guidance from experienced engineers and structured support to help you unblock faster and learn deeper.</p>
+            </div>
+        </div>
+        <div style="margin-top:1rem; display:flex; gap:.5rem; flex-wrap:wrap;">
+            <a href="./courses.html" class="btn-secondary">Explore Courses</a>
+            <a href="./register.html" class="btn-secondary">Join an Event</a>
+            <a href="https://almanet.in/contact/" class="btn-secondary">Talk to Us</a>
+        </div>
+    </section>
+
+    <!-- Target Audience -->
+    <section class="section-block" aria-labelledby="audience-title">
+        <h2 id="audience-title" class="section-title">Who We Serve</h2>
+        <ul class="check-list">
+            <li><i class="fa-solid fa-check-circle"></i> College students and freshers starting careers in web development</li>
+            <li><i class="fa-solid fa-check-circle"></i> Career changers seeking a practical, guided path</li>
+            <li><i class="fa-solid fa-check-circle"></i> Working professionals upskilling to backend/full stack</li>
+            <li><i class="fa-solid fa-check-circle"></i> Teams seeking corporate training aligned to outcomes</li>
+        </ul>
+    </section>
+
+    <!-- Leadership (existing content retained) -->
+    <section class="about-section section-block" style="margin-top: var(--space-xl);">
+        <h2 class="section-title">Leadership</h2>
+
+        <div class="team-member">
+            <h4>Yeshwant Maheshram – Founder</h4>
+            <p>
+                Yeshwant Maheshram is a seasoned IT and business executive with over 25 years of global experience in
+                SAP implementation and cloud migration. He has led multiple large-scale SAP S/4HANA transformations,
+                helping organizations optimize operations and accelerate digital transformation.
+            </p>
+            <p>
+                He has held leadership roles at SAP India, Deloitte Consulting (Chicago), EDS, TCS, HighBar Technocrats,
+                and Cybertech Systems, working with clients across the USA, UK, UAE, and India.
+            </p>
+            <p>
+                Yeshwant holds an M.E. from IISc Bangalore, a B.E. from SGSITS Indore, conducted research at IIT Delhi,
+                and earned a Diploma in Business Administration from Washington, DC.
+            </p>
+        </div>
+
+        <div class="team-member">
+            <h4>Vishnu Murthy – Director</h4>
+            <p>
+                Vishnu Murthy brings over 18 years of SAP consulting and project management experience. He has managed
+                complex implementations across industries including Banking, Insurance, Telecom, Cement, PSU, Chemical,
+                Real Estate, and Oil & Gas.
+            </p>
+            <p>
+                His strengths include stakeholder management, delivery excellence, team leadership, and execution in
+                high-pressure environments.
+            </p>
+        </div>
+
+        <div class="team-member">
+            <h4>Ashish Deshpande – National Head CRM</h4>
+            <p>
+                With 27+ years in IT services, Ashish has served as Delivery Manager, Program Manager, Practice Lead,
+                and Solutions Architect. He played a pivotal role in Accenture’s Digital Practice, securing deals worth
+                over $500 million.
+            </p>
+            <p>
+                As the Founding Director of CloudWiz Consulting, he leads consulting, placement, and niche IT training
+                initiatives while driving Almanet’s CRM strategy and growth.
+            </p>
+        </div>
+
+        <div class="team-member">
+            <h4>Manish Borkar – Program Manager (UK)</h4>
+            <p>
+                Manish is a Technical Program Manager with expertise in Business Analytics, Salesforce development, and
+                customer experience. He has worked with Maruti Suzuki, Ashok Leyland, VE Commercial Vehicles, and
+                Almanet.
+            </p>
+            <p>
+                He holds a Master’s in Business Analytics from the University of Essex, UK, and specializes in
+                data-driven, customer-centric solutions.
+            </p>
+        </div>
+
+        <div class="team-member">
+            <h4>Neeraj Dandotiya – Team Lead</h4>
+            <p>
+                Neeraj is an accomplished Software Engineer with expertise in PHP, WordPress, CodeIgniter, Web Design,
+                and HTML. He leads projects end-to-end, ensuring quality delivery and strong alignment with business
+                objectives.
+            </p>
+            <p>
+                He holds a B.E. in Computer Science from RGPV Bhopal and plays a vital role in technical and operational
+                leadership at Almanet.
+            </p>
+        </div>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="main-footer">
+    <div class="container footer-grid">
+        <div class="footer-col">
+            <h5>Almanet Professional Services</h5>
+            <p>Empowering the next generation of full stack developers with practical, industry-grade skills.</p>
+        </div>
+        <div class="footer-col">
+            <h5>Quick Links</h5>
+            <ul>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./register.html">All Events</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h5>Contact</h5>
+            <p><i class="fa-solid fa-location-dot"></i> 1 Snehalataganj, Indore, MP</p>
+            <p><i class="fa-solid fa-envelope"></i> info@almanet.in</p>
+            <p><i class="fa-solid fa-phone"></i> +91 6264643660</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Almanet Professional Services. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

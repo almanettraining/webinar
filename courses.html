@@ -23,8 +23,23 @@
         <!-- Desktop Navigation -->
         <nav class="desktop-nav">
             <a href="./index.html">Home</a>
-            <a href="./register.html">Webinars</a>
+            <a href="./about.html">About</a>
 
+            <!-- Services Dropdown -->
+            <div class="nav-item nav-has-dropdown nav-services">
+                <button type="button" class="nav-link nav-services-toggle" aria-haspopup="true" aria-expanded="false">
+                    Services
+                    <i class="fa-solid fa-chevron-down nav-caret"></i>
+                </button>
+                <div class="nav-dropdown nav-services-dropdown">
+                    <a href="./services.html#software-development">Software Development</a>
+                    <a href="./services.html#it-consulting">IT Consulting</a>
+                    <a href="./services.html#training">Corporate Training</a>
+                    <a href="./services.html#support">Support &amp; Maintenance</a>
+                </div>
+            </div>
+
+            <!-- Courses Dropdown (unchanged) -->
             <div class="nav-item nav-has-dropdown">
                 <button
                     type="button"
@@ -54,14 +69,40 @@
                 </div>
             </div>
 
+            <!-- Events Dropdown (replacing Webinars) -->
+            <div class="nav-item nav-has-dropdown nav-events">
+                <button type="button" class="nav-link nav-events-toggle" aria-haspopup="true" aria-expanded="false">
+                    Events
+                    <i class="fa-solid fa-chevron-down nav-caret"></i>
+                </button>
+                <div class="nav-dropdown nav-events-dropdown">
+                    <a href="./register.html">Python Full Stack Webinar (Jan 2026)</a>
+                    <a href="./register.html">Django Best Practices Workshop</a>
+                    <a href="./register.html">Career Q&amp;A for Freshers</a>
+                </div>
+            </div>
+
             <a href="https://almanet.in/contact/" class="btn-outline">Contact Us</a>
         </nav>
 
         <!-- Mobile Navigation -->
         <nav class="mobile-nav hidden">
             <a href="./index.html">Home</a>
-            <a href="./register.html">Webinars</a>
+            <a href="./about.html">About</a>
 
+            <!-- Services (mobile dropdown) -->
+            <button type="button" class="mobile-services-toggle" aria-haspopup="true" aria-expanded="false">
+                Services
+                <i class="fa-solid fa-chevron-down nav-caret"></i>
+            </button>
+            <div class="mobile-services-dropdown">
+                <a href="./services.html#software-development" class="mobile-link">Software Development</a>
+                <a href="./services.html#it-consulting" class="mobile-link">IT Consulting</a>
+                <a href="./services.html#training" class="mobile-link">Corporate Training</a>
+                <a href="./services.html#support" class="mobile-link">Support &amp; Maintenance</a>
+            </div>
+
+            <!-- Courses (existing behavior unchanged) -->
             <button
                 type="button"
                 class="mobile-courses-toggle"
@@ -87,6 +128,17 @@
                 <a href="./courses.html#professional" class="mobile-course-link" data-course-target="professional">
                     Professional Readiness
                 </a>
+            </div>
+
+            <!-- Events (mobile dropdown) -->
+            <button type="button" class="mobile-events-toggle" aria-haspopup="true" aria-expanded="false">
+                Events
+                <i class="fa-solid fa-chevron-down nav-caret"></i>
+            </button>
+            <div class="mobile-events-dropdown">
+                <a href="./register.html" class="mobile-link">Python Full Stack Webinar (Jan 2026)</a>
+                <a href="./register.html" class="mobile-link">Django Best Practices Workshop</a>
+                <a href="./register.html" class="mobile-link">Career Q&amp;A for Freshers</a>
             </div>
 
             <a href="https://almanet.in/contact/">Contact Us</a>
@@ -129,7 +181,16 @@
             <span><i class="fa-solid fa-signal"></i> Beginner → Advanced</span>
         </div>
 
-        <button class="btn-primary view-details-btn">View Details</button>
+        <ul class="check-list" style="margin-top:.5rem;">
+            <li><i class="fa-solid fa-check-circle"></i> Frontend + Backend integration</li>
+            <li><i class="fa-solid fa-check-circle"></i> APIs, Auth &amp; Database</li>
+            <li><i class="fa-solid fa-check-circle"></i> Deployment &amp; Projects</li>
+        </ul>
+
+        <div class="course-actions" style="display:flex; gap:.5rem; margin-top:.75rem; flex-wrap:wrap;">
+            <button class="btn-primary view-details-btn">View Details</button>
+            <a class="btn-secondary" href="#" target="_blank" rel="noopener">Download Syllabus</a>
+        </div>
     </div>
 
     <!-- Backend -->
@@ -149,7 +210,16 @@
             <span><i class="fa-solid fa-signal"></i> Beginner → Intermediate</span>
         </div>
 
-        <button class="btn-primary view-details-btn">View Details</button>
+        <ul class="check-list" style="margin-top:.5rem;">
+            <li><i class="fa-solid fa-check-circle"></i> Python OOP + Django</li>
+            <li><i class="fa-solid fa-check-circle"></i> CRUD &amp; ORM</li>
+            <li><i class="fa-solid fa-check-circle"></i> API development</li>
+        </ul>
+
+        <div class="course-actions" style="display:flex; gap:.5rem; margin-top:.75rem; flex-wrap:wrap;">
+            <button class="btn-primary view-details-btn">View Details</button>
+            <a class="btn-secondary" href="#" target="_blank" rel="noopener">Download Syllabus</a>
+        </div>
     </div>
 
     <!-- Database -->
@@ -168,7 +238,16 @@
             <span><i class="fa-solid fa-signal"></i> Beginner</span>
         </div>
 
-        <button class="btn-primary view-details-btn">View Details</button>
+        <ul class="check-list" style="margin-top:.5rem;">
+            <li><i class="fa-solid fa-check-circle"></i> MySQL + Django ORM</li>
+            <li><i class="fa-solid fa-check-circle"></i> Queries &amp; Optimization</li>
+            <li><i class="fa-solid fa-check-circle"></i> Migrations</li>
+        </ul>
+
+        <div class="course-actions" style="display:flex; gap:.5rem; margin-top:.75rem; flex-wrap:wrap;">
+            <button class="btn-primary view-details-btn">View Details</button>
+            <a class="btn-secondary" href="#" target="_blank" rel="noopener">Download Syllabus</a>
+        </div>
     </div>
 
     <!-- Frontend -->
@@ -188,7 +267,16 @@
             <span><i class="fa-solid fa-signal"></i> Beginner</span>
         </div>
 
-        <button class="btn-primary view-details-btn">View Details</button>
+        <ul class="check-list" style="margin-top:.5rem;">
+            <li><i class="fa-solid fa-check-circle"></i> HTML, CSS &amp; JS</li>
+            <li><i class="fa-solid fa-check-circle"></i> Responsive UI</li>
+            <li><i class="fa-solid fa-check-circle"></i> API integration</li>
+        </ul>
+
+        <div class="course-actions" style="display:flex; gap:.5rem; margin-top:.75rem; flex-wrap:wrap;">
+            <button class="btn-primary view-details-btn">View Details</button>
+            <a class="btn-secondary" href="#" target="_blank" rel="noopener">Download Syllabus</a>
+        </div>
     </div>
 
     <!-- Professional Readiness -->
@@ -208,7 +296,16 @@
             <span><i class="fa-solid fa-signal"></i> All Levels</span>
         </div>
 
-        <button class="btn-primary view-details-btn">View Details</button>
+        <ul class="check-list" style="margin-top:.5rem;">
+            <li><i class="fa-solid fa-check-circle"></i> Projects &amp; Git</li>
+            <li><i class="fa-solid fa-check-circle"></i> Resume &amp; Interview</li>
+            <li><i class="fa-solid fa-check-circle"></i> Portfolio</li>
+        </ul>
+
+        <div class="course-actions" style="display:flex; gap:.5rem; margin-top:.75rem; flex-wrap:wrap;">
+            <button class="btn-primary view-details-btn">View Details</button>
+            <a class="btn-secondary" href="#" target="_blank" rel="noopener">Download Syllabus</a>
+        </div>
     </div>
 
 </div>
@@ -224,8 +321,8 @@
             <div class="footer-col">
                 <h5>Quick Links</h5>
                 <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">All Events</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./register.html">All Events</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Terms of Service</a></li>
                 </ul>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Almanet Professional Services</title>
+    <meta name="description" content="Industry-level SAP, Salesforce, IT Advisory, and Staffing services by Almanet Professional Services.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="https://almanet.in/wp-content/uploads/2022/03/cropped-Almanet-logo-1-32x32.png" sizes="32x32">
+    <meta name="theme-color" content="#0182FF">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="main-header">
+    <div class="container">
+        <img src="https://almanet.in/wp-content/uploads/2022/03/Almanet-logo-220x47-1.png"
+             alt="Almanet Professional Services Logo" style="height:40px;">
+
+        <nav class="desktop-nav">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+
+            <!-- Services Dropdown -->
+            <div class="nav-item nav-has-dropdown nav-services">
+                <button type="button" class="nav-link nav-services-toggle active" aria-haspopup="true" aria-expanded="false">
+                    Services
+                    <i class="fa-solid fa-chevron-down nav-caret"></i>
+                </button>
+                <div class="nav-dropdown nav-services-dropdown">
+                    <a href="./services.html#software-development">Software Development</a>
+                    <a href="./services.html#enterprise-solutions">Enterprise Solutions</a>
+                    <a href="./services.html#ui-ux-design">UI/UX Design</a>
+                    <a href="./services.html#assurance-testing">Assurance & Testing</a>
+                    <a href="./services.html#maintenance-support">Maintenance & Support</a>
+                    <a href="./services.html#devops-services">DevOps Services</a>
+                    <a href="./services.html#security-solutions">Security Solutions</a>
+                    <a href="./services.html#big-data-analytics">Big Data Analytics</a>
+                </div>
+            </div>
+
+            <!-- Courses Dropdown -->
+            <div class="nav-item nav-has-dropdown nav-courses">
+                <button type="button" class="nav-link nav-courses-toggle" aria-haspopup="true" aria-expanded="false">
+                    Courses <i class="fa-solid fa-chevron-down nav-caret"></i>
+                </button>
+                <div class="nav-dropdown nav-courses-dropdown">
+                    <a href="./courses.html#fullstack-python">Python Full Stack Development</a>
+                    <a href="./courses.html#backend-python">Backend with Python & Django</a>
+                    <a href="./courses.html#frontend">Frontend Essentials</a>
+                    <a href="./courses.html#database">Database & ORM</a>
+                    <a href="./courses.html#professional">Professional Readiness</a>
+                </div>
+            </div>
+
+            <!-- Events Dropdown -->
+            <div class="nav-item nav-has-dropdown nav-events">
+                <button type="button" class="nav-link nav-events-toggle" aria-haspopup="true" aria-expanded="false">
+                    Events
+                    <i class="fa-solid fa-chevron-down nav-caret"></i>
+                </button>
+                <div class="nav-dropdown nav-events-dropdown">
+                    <a href="./register.html">Upcoming Webinars</a>
+                    <a href="./register.html#recent">Recent Webinars</a>
+                </div>
+            </div>
+
+            <a href="https://almanet.in/contact/" class="btn-outline">Contact Us</a>
+        </nav>
+
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav hidden">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+
+            <!-- Mobile Services -->
+            <button type="button" class="mobile-services-toggle" aria-haspopup="true" aria-expanded="false">
+                Services <i class="fa-solid fa-chevron-down nav-caret"></i>
+            </button>
+            <div class="mobile-services-dropdown">
+                <a href="./services.html#software-development" class="mobile-link">Software Development</a>
+                <a href="./services.html#enterprise-solutions" class="mobile-link">Enterprise Solutions</a>
+                <a href="./services.html#ui-ux-design" class="mobile-link">UI/UX Design</a>
+                <a href="./services.html#assurance-testing" class="mobile-link">Assurance & Testing</a>
+                <a href="./services.html#maintenance-support" class="mobile-link">Maintenance & Support</a>
+                <a href="./services.html#devops-services" class="mobile-link">DevOps Services</a>
+                <a href="./services.html#security-solutions" class="mobile-link">Security Solutions</a>
+                <a href="./services.html#big-data-analytics" class="mobile-link">Big Data Analytics</a>
+            </div>
+
+            <!-- Mobile Courses -->
+            <button type="button" class="mobile-courses-toggle" aria-haspopup="true" aria-expanded="false">
+                Courses <i class="fa-solid fa-chevron-down nav-caret"></i>
+            </button>
+            <div class="mobile-courses-dropdown">
+                <a href="./courses.html#fullstack-python" class="mobile-course-link">Python Full Stack Development</a>
+                <a href="./courses.html#backend-python" class="mobile-course-link">Backend with Python & Django</a>
+                <a href="./courses.html#frontend" class="mobile-course-link">Frontend Essentials</a>
+                <a href="./courses.html#database" class="mobile-course-link">Database & ORM</a>
+                <a href="./courses.html#professional" class="mobile-course-link">Professional Readiness</a>
+            </div>
+
+            <!-- Mobile Events -->
+            <button type="button" class="mobile-events-toggle" aria-haspopup="true" aria-expanded="false">
+                Events <i class="fa-solid fa-chevron-down nav-caret"></i>
+            </button>
+            <div class="mobile-events-dropdown">
+                <a href="./register.html" class="mobile-link">Upcoming Webinars</a>
+                <a href="./register.html#recent" class="mobile-link">Recent Webinars</a>
+            </div>
+
+            <a href="https://almanet.in/contact/">Contact Us</a>
+        </nav>
+
+        <button class="mobile-menu-btn" aria-label="Toggle Menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="services-hero">
+    <div class="container">
+        <div class="services-hero-content">
+            <h1 class="services-hero-title">Services</h1>
+            <p class="services-hero-subtitle">
+                Comprehensive IT solutions and professional services to drive your digital transformation and business growth.
+            </p>
+        </div>
+    </div>
+    <div class="services-hero-wave"></div>
+</section>
+
+<!-- MAIN -->
+<main class="container services-main" style="padding: var(--space-xl) 0;">
+
+    <!-- Services Grid Section -->
+    <section class="section-block" aria-labelledby="services-heading">
+        <div class="services-grid">
+            <article id="software-development" class="service-card" aria-labelledby="software-development-title">
+                <div class="service-icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <h3 id="software-development-title" class="service-title">Software Development</h3>
+                <p class="service-description">Custom software solutions built with modern technologies. From web applications to enterprise systems, we deliver scalable and maintainable code.</p>
+            </article>
+
+            <article id="enterprise-solutions" class="service-card" aria-labelledby="enterprise-solutions-title">
+                <div class="service-icon">
+                    <i class="fa-solid fa-building"></i>
+                </div>
+                <h3 id="enterprise-solutions-title" class="service-title">Enterprise Solutions</h3>
+                <p class="service-description">End-to-end enterprise software solutions tailored to your business needs. Streamline operations and enhance productivity with integrated systems.</p>
+            </article>
+
+            <article id="ui-ux-design" class="service-card" aria-labelledby="ui-ux-design-title">
+                <div class="service-icon">
+                    <i class="fa-solid fa-palette"></i>
+                </div>
+                <h3 id="ui-ux-design-title" class="service-title">UI/UX Design</h3>
+                <p class="service-description">User-centered design that creates intuitive and engaging experiences. We combine aesthetics with functionality to deliver exceptional digital products.</p>
+            </article>
+
+            <article id="assurance-testing" class="service-card" aria-labelledby="assurance-testing-title">
+                <div class="service-icon">
+                    <i class="fa-solid fa-vial"></i>
+                </div>
+                <h3 id="assurance-testing-title" class="service-title">Assurance & Testing</h3>
+                <p class="service-description">Comprehensive quality assurance and testing services. Ensure reliability, performance, and security through rigorous testing methodologies.</p>
+            </article>
+
+            <article id="maintenance-support" class="service-card" aria-labelledby="maintenance-support-title">
+                <div class="service-icon">
+                    <i class="fa-solid fa-life-ring"></i>
+                </div>
+                <h3 id="maintenance-support-title" class="service-title">Maintenance & Support</h3>
+                <p class="service-description">Ongoing maintenance and 24/7 support to keep your systems running smoothly. Proactive monitoring and rapid incident response.</p>
+            </article>
+
+            <article id="devops-services" class="service-card" aria-labelledby="devops-services-title">
+                <div class="service-icon">
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+                <h3 id="devops-services-title" class="service-title">DevOps Services</h3>
+                <p class="service-description">Streamline your development and deployment processes. CI/CD pipelines, infrastructure automation, and cloud-native solutions.</p>
+            </article>
+
+            <article id="security-solutions" class="service-card" aria-labelledby="security-solutions-title">
+                <div class="service-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h3 id="security-solutions-title" class="service-title">Security Solutions</h3>
+                <p class="service-description">Protect your digital assets with comprehensive security services. Vulnerability assessments, penetration testing, and security architecture.</p>
+            </article>
+
+            <article id="big-data-analytics" class="service-card" aria-labelledby="big-data-analytics-title">
+                <div class="service-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h3 id="big-data-analytics-title" class="service-title">Big Data Analytics</h3>
+                <p class="service-description">Transform data into actionable insights. Data engineering, analytics platforms, and business intelligence solutions to drive informed decisions.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-block services-cta">
+        <div class="services-cta-content">
+            <h2 class="services-cta-title">Ready to Transform Your Business?</h2>
+            <p class="services-cta-text">Let's discuss how our services can help you achieve your goals.</p>
+            <div class="services-cta-buttons">
+                <a href="https://almanet.in/contact/" class="btn-primary">Get in Touch</a>
+                <a href="./about.html" class="btn-secondary">Learn More About Us</a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="main-footer">
+    <div class="container footer-grid">
+        <div class="footer-col">
+            <h5>Almanet Professional Services</h5>
+            <p>Empowering organizations with enterprise-grade IT and digital transformation solutions.</p>
+        </div>
+        <div class="footer-col">
+            <h5>Quick Links</h5>
+            <ul>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h5>Contact</h5>
+            <p><i class="fa-solid fa-location-dot"></i> 1 Snehalataganj, Indore, MP</p>
+            <p><i class="fa-solid fa-envelope"></i> info@almanet.in</p>
+            <p><i class="fa-solid fa-phone"></i> +91 6264643660</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Almanet Professional Services. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

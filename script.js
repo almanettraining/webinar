@@ -127,6 +127,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Mobile Menu ---
     const mobileNav = document.querySelector('.mobile-nav');
+    const mobileServiceDropdown = () => {
+        const dropdowns = mobileNav ? mobileNav.querySelectorAll('.mobile-services-dropdown, .mobile-courses-dropdown, .mobile-events-dropdown') : [];
+        dropdowns.forEach(dd => dd.classList.remove('open'));
+        const toggles = mobileNav ? mobileNav.querySelectorAll('.mobile-services-toggle, .mobile-courses-toggle, .mobile-events-toggle') : [];
+        toggles.forEach(btn => btn.setAttribute('aria-expanded', 'false'));
+    };
 
     if (mobileMenuBtn && mobileNav) {
         mobileMenuBtn.addEventListener('click', () => {
@@ -163,6 +169,58 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             });
         }
+
+        // Mobile services dropdown toggle
+        const mobileServicesToggle = mobileNav.querySelector('.mobile-services-toggle');
+        const mobileServicesDropdown = mobileNav.querySelector('.mobile-services-dropdown');
+        if (mobileServicesToggle && mobileServicesDropdown) {
+            mobileServicesToggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                const isOpen = mobileServicesDropdown.classList.toggle('open');
+                mobileServicesToggle.setAttribute('aria-expanded', String(isOpen));
+            });
+            mobileServicesDropdown.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileServicesDropdown.classList.remove('open');
+                    mobileServicesToggle.setAttribute('aria-expanded', 'false');
+                    setTimeout(() => {
+                        mobileNav.classList.add('hidden');
+                    }, 150);
+                });
+            });
+        }
+
+        // Mobile events dropdown toggle
+        const mobileEventsToggle = mobileNav.querySelector('.mobile-events-toggle');
+        const mobileEventsDropdown = mobileNav.querySelector('.mobile-events-dropdown');
+        if (mobileEventsToggle && mobileEventsDropdown) {
+            mobileEventsToggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                const isOpen = mobileEventsDropdown.classList.toggle('open');
+                mobileEventsToggle.setAttribute('aria-expanded', String(isOpen));
+            });
+            mobileEventsDropdown.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileEventsDropdown.classList.remove('open');
+                    mobileEventsToggle.setAttribute('aria-expanded', 'false');
+                    setTimeout(() => {
+                        mobileNav.classList.add('hidden');
+                    }, 150);
+                });
+            });
+        }
+
+        // Close mobile nav when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileNav.classList.contains('hidden')) {
+                const clickedInsideNav = mobileNav.contains(e.target);
+                const clickedToggle = mobileMenuBtn.contains(e.target);
+                if (!clickedInsideNav && !clickedToggle) {
+                    mobileNav.classList.add('hidden');
+                    mobileServiceDropdown();
+                }
+            }
+        });
     }
 
     // --- Smooth Scroll for Anchor Links ---
@@ -201,7 +259,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Desktop Courses Dropdown (accessibility + click support) ---
     const desktopCoursesToggle = document.querySelector('.nav-courses-toggle');
-    const desktopCoursesItem = document.querySelector('.nav-has-dropdown');
+    const desktopCoursesItem = desktopCoursesToggle ? desktopCoursesToggle.closest('.nav-has-dropdown') : null;
 
     if (desktopCoursesToggle && desktopCoursesItem) {
         desktopCoursesToggle.addEventListener('click', (e) => {
@@ -217,6 +275,80 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // --- Desktop Services Dropdown ---
+    const desktopServicesToggle = document.querySelector('.nav-services-toggle');
+    const desktopServicesItem = desktopServicesToggle ? desktopServicesToggle.closest('.nav-has-dropdown') : null;
+    if (desktopServicesToggle && desktopServicesItem) {
+        desktopServicesToggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            const isOpen = desktopServicesItem.classList.toggle('open');
+            desktopServicesToggle.setAttribute('aria-expanded', String(isOpen));
+        });
+        document.addEventListener('click', (e) => {
+            if (!desktopServicesItem.contains(e.target)) {
+                desktopServicesItem.classList.remove('open');
+                desktopServicesToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+    }
+
+    // --- Desktop Events Dropdown ---
+    const desktopEventsToggle = document.querySelector('.nav-events-toggle');
+    const desktopEventsItem = desktopEventsToggle ? desktopEventsToggle.closest('.nav-has-dropdown') : null;
+    if (desktopEventsToggle && desktopEventsItem) {
+        desktopEventsToggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            const isOpen = desktopEventsItem.classList.toggle('open');
+            desktopEventsToggle.setAttribute('aria-expanded', String(isOpen));
+        });
+        document.addEventListener('click', (e) => {
+            if (!desktopEventsItem.contains(e.target)) {
+                desktopEventsItem.classList.remove('open');
+                desktopEventsToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+    }
+
+    // --- Accessibility: keyboard support and escape to close ---
+    const desktopDropdowns = document.querySelectorAll('.nav-has-dropdown');
+    const closeAllDesktopDropdowns = () => {
+        desktopDropdowns.forEach(item => {
+            item.classList.remove('open');
+            const toggle = item.querySelector('.nav-link');
+            if (toggle) toggle.setAttribute('aria-expanded', 'false');
+        });
+    };
+
+    function addToggleKeyboardSupport(toggle, item) {
+        if (!toggle || !item) return;
+        toggle.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                const isOpen = item.classList.toggle('open');
+                toggle.setAttribute('aria-expanded', String(isOpen));
+            }
+            if (e.key === 'Escape') {
+                item.classList.remove('open');
+                toggle.setAttribute('aria-expanded', 'false');
+                toggle.focus();
+            }
+        });
+    }
+
+    if (desktopCoursesToggle && desktopCoursesItem) addToggleKeyboardSupport(desktopCoursesToggle, desktopCoursesItem);
+    if (desktopServicesToggle && desktopServicesItem) addToggleKeyboardSupport(desktopServicesToggle, desktopServicesItem);
+    if (desktopEventsToggle && desktopEventsItem) addToggleKeyboardSupport(desktopEventsToggle, desktopEventsItem);
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            closeAllDesktopDropdowns();
+            if (mobileNav && !mobileNav.classList.contains('hidden')) {
+                mobileNav.classList.add('hidden');
+                mobileServiceDropdown();
+            }
+        }
+    });
 
     // --- Course Details Modal ---
     const courseData = {

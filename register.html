@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="https://almanet.in/wp-content/uploads/2022/03/cropped-Almanet-logo-1-32x32.png" sizes="32x32">
+    <meta name="theme-color" content="#0182FF">
 </head>
 
 <body>
@@ -26,9 +28,28 @@
             <!-- Desktop Nav -->
             <nav class="desktop-nav">
                 <a href="./index.html">Home</a>
-                <a href="./register.html">Webinars</a>
+                <a href="./about.html">About</a>
 
-                <div class="nav-item nav-has-dropdown">
+                <!-- Services Dropdown -->
+                <div class="nav-item nav-has-dropdown nav-services">
+                    <button type="button" class="nav-link nav-services-toggle" aria-haspopup="true" aria-expanded="false">
+                        Services
+                        <i class="fa-solid fa-chevron-down nav-caret"></i>
+                    </button>
+                    <div class="nav-dropdown nav-services-dropdown">
+                        <a href="./services.html#software-development">Software Development</a>
+                        <a href="./services.html#enterprise-solutions">Enterprise Solutions</a>
+                        <a href="./services.html#ui-ux-design">UI/UX Design</a>
+                        <a href="./services.html#assurance-testing">Assurance & Testing</a>
+                        <a href="./services.html#maintenance-support">Maintenance & Support</a>
+                        <a href="./services.html#devops-services">DevOps Services</a>
+                        <a href="./services.html#security-solutions">Security Solutions</a>
+                        <a href="./services.html#big-data-analytics">Big Data Analytics</a>
+                    </div>
+                </div>
+
+                <!-- Courses Dropdown -->
+                <div class="nav-item nav-has-dropdown nav-courses">
                     <button
                         type="button"
                         class="nav-link nav-courses-toggle"
@@ -40,7 +61,7 @@
                     </button>
                     <div class="nav-dropdown nav-courses-dropdown">
                         <a href="./courses.html#fullstack-python" data-course-target="fullstack-python">
-                            Full Stack Python Development
+                            Python Full Stack Development
                         </a>
                         <a href="./courses.html#backend-python" data-course-target="backend-python">
                             Backend with Python &amp; Django
@@ -57,14 +78,43 @@
                     </div>
                 </div>
 
+                <!-- Events Dropdown -->
+                <div class="nav-item nav-has-dropdown nav-events">
+                <button type="button" class="nav-link nav-events-toggle active" aria-haspopup="true" aria-expanded="false">
+                        Events
+                        <i class="fa-solid fa-chevron-down nav-caret"></i>
+                    </button>
+                    <div class="nav-dropdown nav-events-dropdown">
+                        <a href="./register.html">Upcoming Webinars</a>
+                        <a href="./register.html#recent">Recent Webinars</a>
+                    </div>
+                </div>
+
                 <a href="https://almanet.in/contact/" class="btn-outline">Contact Us</a>
             </nav>
 
             <!-- Mobile Nav -->
             <nav class="mobile-nav hidden">
                 <a href="./index.html">Home</a>
-                <a href="./register.html">Webinars</a>
+                <a href="./about.html">About</a>
 
+                <!-- Services (mobile dropdown) -->
+                <button type="button" class="mobile-services-toggle" aria-haspopup="true" aria-expanded="false">
+                    Services
+                    <i class="fa-solid fa-chevron-down nav-caret"></i>
+                </button>
+                <div class="mobile-services-dropdown">
+                    <a href="./services.html#software-development" class="mobile-link">Software Development</a>
+                    <a href="./services.html#enterprise-solutions" class="mobile-link">Enterprise Solutions</a>
+                    <a href="./services.html#ui-ux-design" class="mobile-link">UI/UX Design</a>
+                    <a href="./services.html#assurance-testing" class="mobile-link">Assurance & Testing</a>
+                    <a href="./services.html#maintenance-support" class="mobile-link">Maintenance & Support</a>
+                    <a href="./services.html#devops-services" class="mobile-link">DevOps Services</a>
+                    <a href="./services.html#security-solutions" class="mobile-link">Security Solutions</a>
+                    <a href="./services.html#big-data-analytics" class="mobile-link">Big Data Analytics</a>
+                </div>
+
+                <!-- Courses (existing behavior unchanged) -->
                 <button
                     type="button"
                     class="mobile-courses-toggle"
@@ -92,6 +142,16 @@
                     </a>
                 </div>
 
+                <!-- Events (mobile dropdown) -->
+                <button type="button" class="mobile-events-toggle" aria-haspopup="true" aria-expanded="false">
+                    Events
+                    <i class="fa-solid fa-chevron-down nav-caret"></i>
+                </button>
+                <div class="mobile-events-dropdown">
+                    <a href="./register.html" class="mobile-link">Upcoming Webinars</a>
+                    <a href="./register.html#recent" class="mobile-link">Recent Webinars</a>
+                </div>
+
                 <a href="https://almanet.in/contact/">Contact Us</a>
             </nav>
 
@@ -101,8 +161,63 @@
         </div>
     </header>
 
+    <!-- Events Listing (Recent Webinars/Events) -->
+    <section class="section-block" aria-labelledby="events-title" id="events">
+        <div class="container">
+            <h2 id="events-title" class="section-title">Events &amp; Webinars</h2>
+            <p class="lead-text">Browse our recent and upcoming sessions. Select an event to view details or register.</p>
+            <div class="learning-grid">
+                <article id="python-fullstack-jan-2026" class="learn-card" aria-labelledby="event-python-title">
+                    <div class="course-header">
+                        <i class="fa-solid fa-video"></i>
+                        <h4 id="event-python-title">Python Full Stack Webinar (Jan 2026)</h4>
+                    </div>
+                    <p class="course-summary">45-minute live session covering the roadmap to become a job-ready Python Full Stack Developer.</p>
+                    <div class="course-meta">
+                        <span><i class="fa-regular fa-calendar"></i> 8–10 January 2026</span>
+                        <span><i class="fa-regular fa-clock"></i> 1:00 PM – 1:45 PM EST</span>
+                    </div>
+                    <div style="display:flex; gap:.5rem; flex-wrap:wrap; margin-top:.5rem;">
+                        <a href="#register-now" class="btn-primary">Register Now</a>
+                        <a href="./index.html" class="btn-secondary">Event Details</a>
+                    </div>
+                </article>
+
+                <article id="django-best-practices" class="learn-card" aria-labelledby="event-django-title">
+                    <div class="course-header">
+                        <i class="fa-solid fa-chalkboard-teacher"></i>
+                        <h4 id="event-django-title">Django Best Practices Workshop</h4>
+                    </div>
+                    <p class="course-summary">Hands-on workshop on structuring projects, ORM tips, and testing workflows.</p>
+                    <div class="course-meta">
+                        <span><i class="fa-regular fa-calendar"></i> Coming Soon</span>
+                        <span><i class="fa-regular fa-clock"></i> 60–90 Minutes</span>
+                    </div>
+                    <div style="display:flex; gap:.5rem; flex-wrap:wrap; margin-top:.5rem;">
+                        <a href="https://almanet.in/contact/" class="btn-secondary" target="_blank" rel="noopener">Notify Me</a>
+                    </div>
+                </article>
+
+                <article id="career-qa-freshers" class="learn-card" aria-labelledby="event-career-title">
+                    <div class="course-header">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <h4 id="event-career-title">Career Q&amp;A for Freshers</h4>
+                    </div>
+                    <p class="course-summary">Live Q&amp;A for resumes, projects, and interview preparation in full stack roles.</p>
+                    <div class="course-meta">
+                        <span><i class="fa-regular fa-calendar"></i> Coming Soon</span>
+                        <span><i class="fa-regular fa-clock"></i> 45–60 Minutes</span>
+                    </div>
+                    <div style="display:flex; gap:.5rem; flex-wrap:wrap; margin-top:.5rem;">
+                        <a href="https://almanet.in/contact/" class="btn-secondary" target="_blank" rel="noopener">Notify Me</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <!-- Registration Hero Section -->
-    <section class="registration-hero">
+    <section class="registration-hero" id="register-now">
         <div class="container">
             <div class="registration-hero-content">
                 <div class="registration-icon-wrapper">
@@ -254,8 +369,8 @@
             <div class="footer-col">
                 <h5>Quick Links</h5>
                 <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">All Events</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./register.html">All Events</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Terms of Service</a></li>
                 </ul>
@@ -272,7 +387,7 @@
             <p>&copy; 2025 Almanet Professional Services. All rights reserved.</p>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
