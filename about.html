@@ -20,103 +20,109 @@
 
 <!-- HEADER -->
 <header class="main-header">
-    <div class="container">
-        <img src="https://almanet.in/wp-content/uploads/2022/03/Almanet-logo-220x47-1.png"
-             alt="Almanet Professional Services Logo" style="height:40px;">
+        <div class="container">
+            <img src="https://almanet.in/wp-content/uploads/2022/03/Almanet-logo-220x47-1.png"
+                alt="Almanet Professional Services Logo" style="height: 40px;">
 
-        <nav class="desktop-nav">
-            <a href="./index.html">Home</a>
-            <a href="./about.html" class="active">About</a>
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <a href="./index.html" class="active">Home</a>
+                <a href="./about.html">About</a>
 
-            <!-- Services Dropdown -->
-            <div class="nav-item nav-has-dropdown nav-services">
-                <button type="button" class="nav-link nav-services-toggle" aria-haspopup="true" aria-expanded="false">
-                    Services
-                    <i class="fa-solid fa-chevron-down nav-caret"></i>
-                </button>
-                <div class="nav-dropdown nav-services-dropdown">
-                    <a href="./services.html#software-development">Software Development</a>
-                    <a href="./services.html#it-consulting">IT Consulting</a>
-                    <a href="./services.html#training">Corporate Training</a>
-                    <a href="./services.html#support">Support &amp; Maintenance</a>
+                <!-- Services Dropdown -->
+                <div class="nav-item nav-has-dropdown nav-services">
+                    <button type="button" class="nav-link nav-services-toggle" aria-haspopup="true" aria-expanded="false">
+                        Services <i class="fa-solid fa-chevron-down nav-caret"></i>
+                    </button>
+                    <div class="nav-dropdown nav-services-dropdown">
+                        <a href="./services.html#software-development">Software Development</a>
+                        <a href="./services.html#enterprise-solutions">Enterprise Solutions</a>
+                        <a href="./services.html#ui-ux-design">UI/UX Design</a>
+                        <a href="./services.html#assurance-testing">Assurance & Testing</a>
+                        <a href="./services.html#maintenance-support">Maintenance & Support</a>
+                        <a href="./services.html#devops-services">DevOps Services</a>
+                        <a href="./services.html#security-solutions">Security Solutions</a>
+                        <a href="./services.html#big-data-analytics">Big Data Analytics</a>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Courses Dropdown (unchanged) -->
-            <div class="nav-item nav-has-dropdown">
-                <button type="button" class="nav-link nav-courses-toggle">
+                <!-- Courses Dropdown -->
+                <div class="nav-item nav-has-dropdown nav-courses">
+                    <button type="button" class="nav-link nav-courses-toggle" aria-haspopup="true" aria-expanded="false">
+                        Courses <i class="fa-solid fa-chevron-down nav-caret"></i>
+                    </button>
+                    <div class="nav-dropdown nav-courses-dropdown">
+                        <a href="./courses.html#fullstack-python">Python Full Stack Development</a>
+                        <a href="./courses.html#backend-python">Backend with Python & Django</a>
+                        <a href="./courses.html#frontend">Frontend Essentials</a>
+                        <a href="./courses.html#database">Database & ORM</a>
+                        <a href="./courses.html#professional">Professional Readiness</a>
+                    </div>
+                </div>
+
+                <!-- Events Dropdown -->
+                <div class="nav-item nav-has-dropdown nav-events">
+                    <button type="button" class="nav-link nav-events-toggle" aria-haspopup="true" aria-expanded="false">
+                        Events <i class="fa-solid fa-chevron-down nav-caret"></i>
+                    </button>
+                    <div class="nav-dropdown nav-events-dropdown">
+                        <a href="./register.html">Upcoming Webinars</a>
+                        <a href="./register.html#recent">Recent Webinars</a>
+                    </div>
+                </div>
+
+                <a href="https://almanet.in/contact/" class="btn-outline">Contact Us</a>
+            </nav>
+
+            <!-- Mobile Navigation -->
+            <nav class="mobile-nav hidden">
+                <a href="./index.html" class="active">Home</a>
+                <a href="./about.html">About</a>
+
+                <!-- Mobile Services -->
+                <button type="button" class="mobile-services-toggle" aria-haspopup="true" aria-expanded="false">
+                    Services <i class="fa-solid fa-chevron-down nav-caret"></i>
+                </button>
+                <div class="mobile-services-dropdown">
+                    <a href="./services.html#software-development" class="mobile-link">Software Development</a>
+                    <a href="./services.html#enterprise-solutions" class="mobile-link">Enterprise Solutions</a>
+                    <a href="./services.html#ui-ux-design" class="mobile-link">UI/UX Design</a>
+                    <a href="./services.html#assurance-testing" class="mobile-link">Assurance & Testing</a>
+                    <a href="./services.html#maintenance-support" class="mobile-link">Maintenance & Support</a>
+                    <a href="./services.html#devops-services" class="mobile-link">DevOps Services</a>
+                    <a href="./services.html#security-solutions" class="mobile-link">Security Solutions</a>
+                    <a href="./services.html#big-data-analytics" class="mobile-link">Big Data Analytics</a>
+                </div>
+
+                <!-- Mobile Courses -->
+                <button type="button" class="mobile-courses-toggle" aria-haspopup="true" aria-expanded="false">
                     Courses <i class="fa-solid fa-chevron-down nav-caret"></i>
                 </button>
-                <div class="nav-dropdown nav-courses-dropdown">
-                    <a href="./courses.html#fullstack-python">Full Stack Python Development</a>
-                    <a href="./courses.html#backend-python">Backend with Python & Django</a>
-                    <a href="./courses.html#frontend">Frontend Essentials</a>
-                    <a href="./courses.html#database">Database & ORM</a>
-                    <a href="./courses.html#professional">Professional Readiness</a>
+                <div class="mobile-courses-dropdown">
+                    <a href="./courses.html#fullstack-python" class="mobile-course-link">Python Full Stack Development</a>
+                    <a href="./courses.html#backend-python" class="mobile-course-link">Backend with Python & Django</a>
+                    <a href="./courses.html#frontend" class="mobile-course-link">Frontend Essentials</a>
+                    <a href="./courses.html#database" class="mobile-course-link">Database & ORM</a>
+                    <a href="./courses.html#professional" class="mobile-course-link">Professional Readiness</a>
                 </div>
-            </div>
 
-            <!-- Events Dropdown -->
-            <div class="nav-item nav-has-dropdown nav-events">
-                <button type="button" class="nav-link nav-events-toggle" aria-haspopup="true" aria-expanded="false">
-                    Events
-                    <i class="fa-solid fa-chevron-down nav-caret"></i>
+                <!-- Mobile Events -->
+                <button type="button" class="mobile-events-toggle" aria-haspopup="true" aria-expanded="false">
+                    Events <i class="fa-solid fa-chevron-down nav-caret"></i>
                 </button>
-                <div class="nav-dropdown nav-events-dropdown">
-                    <a href="./register.html">Python Full Stack Webinar (Jan 2026)</a>
-                    <a href="./register.html">Django Best Practices Workshop</a>
-                    <a href="./register.html">Career Q&amp;A for Freshers</a>
+                <div class="mobile-events-dropdown">
+                    <a href="./register.html" class="mobile-link">Upcoming Webinars</a>
+                    <a href="./register.html#recent" class="mobile-link">Recent Webinars</a>
                 </div>
-            </div>
 
-            <a href="https://almanet.in/contact/" class="btn-outline">Contact Us</a>
-        </nav>
+                <a href="https://almanet.in/contact/">Contact Us</a>
+            </nav>
 
-                <!-- Mobile Navigation -->
-        <nav class="mobile-nav hidden">
-            <a href="./index.html">Home</a>
-            <a href="./about.html" class="active">About</a>
-
-            <!-- Services -->
-            <button class="mobile-dropdown-toggle">
-                Services <i class="fa-solid fa-chevron-down"></i>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
             </button>
-            <div class="mobile-dropdown hidden">
-                <a href="./services.html#software-development">Software Development</a>
-                <a href="./services.html#it-consulting">IT Consulting</a>
-                <a href="./services.html#training">Corporate Training</a>
-                <a href="./services.html#support">Support & Maintenance</a>
-            </div>
-
-            <!-- Courses -->
-            <button class="mobile-dropdown-toggle">
-                Courses <i class="fa-solid fa-chevron-down"></i>
-            </button>
-            <div class="mobile-dropdown hidden">
-                <a href="./courses.html#fullstack-python">Python Full Stack Development</a>
-                <a href="./courses.html#backend-python">Backend with Python & Django</a>
-                <a href="./courses.html#frontend">Frontend Essentials</a>
-                <a href="./courses.html#database">Database & ORM</a>
-                <a href="./courses.html#professional">Professional Readiness</a>
-            </div>
-
-            <!-- Events -->
-            <button class="mobile-dropdown-toggle">
-                Events <i class="fa-solid fa-chevron-down"></i>
-            </button>
-            <div class="mobile-dropdown hidden">
-                <a href="./register.html">Upcoming Webinars</a>
-                <a href="./register.html#recent">Recent Webinars</a>
-            </div>
-
-            <a href="https://almanet.in/contact/">Contact Us</a>
-        </nav>
-
-        <button class="mobile-menu-btn">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-    </div>
-</header>
+        </div>
+    </header>
 
 <!-- HERO -->
 <section class="courses-hero">
