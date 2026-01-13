@@ -16,139 +16,112 @@
 <body>
 
 <!-- HEADER (same as index.html) -->
-<header class="main-header">
-    <div class="container">
-        <img src="https://almanet.in/wp-content/uploads/2022/03/Almanet-logo-220x47-1.png" alt="Almanet Professional Services Logo" style="height:40px;">
-        
-        <!-- Desktop Navigation -->
-        <nav class="desktop-nav">
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About</a>
+    <header class="main-header">
+        <div class="container">
+            <img src="https://almanet.in/wp-content/uploads/2022/03/Almanet-logo-220x47-1.png"
+                alt="Almanet Professional Services Logo" style="height: 40px;">
 
-            <!-- Services Dropdown -->
-            <div class="nav-item nav-has-dropdown nav-services">
-                <button type="button" class="nav-link nav-services-toggle" aria-haspopup="true" aria-expanded="false">
-                    Services
-                    <i class="fa-solid fa-chevron-down nav-caret"></i>
-                </button>
-                <div class="nav-dropdown nav-services-dropdown">
-                    <a href="./services.html#software-development">Software Development</a>
-                    <a href="./services.html#it-consulting">IT Consulting</a>
-                    <a href="./services.html#training">Corporate Training</a>
-                    <a href="./services.html#support">Support &amp; Maintenance</a>
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <a href="./index.html" class="active">Home</a>
+                <a href="./about.html">About</a>
+
+                <!-- Services Dropdown -->
+                <div class="nav-item nav-has-dropdown nav-services">
+                    <button type="button" class="nav-link nav-services-toggle" aria-haspopup="true" aria-expanded="false">
+                        Services <i class="fa-solid fa-chevron-down nav-caret"></i>
+                    </button>
+                    <div class="nav-dropdown nav-services-dropdown">
+                        <a href="./services/sap-hana-services.html">SAP HANA Services</a>
+                        <a href="./services/software-development.html">Software Development</a>
+                        <a href="./services/sap-successfactors.html">SAP SuccessFactors</a>
+                        <a href="./services/sap-abap-development.html">SAP ABAP Development</a>
+                        <a href="./services/salesforce-services.html">Salesforce</a>
+                        <a href="./services/it-advisory.html">IT Advisory</a>
+                        <a href="./services/sap-recruitment.html">SAP Recruitment</a>
+                        <a href="./services/sap-staffing-services.html">SAP Staffing Services</a>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Courses Dropdown (unchanged) -->
-            <div class="nav-item nav-has-dropdown">
-                <button
-                    type="button"
-                    class="nav-link nav-courses-toggle"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                >
-                    Courses
-                    <i class="fa-solid fa-chevron-down nav-caret"></i>
-                </button>
-                <div class="nav-dropdown nav-courses-dropdown">
-                    <a href="./courses.html#fullstack-python" data-course-target="fullstack-python">
-                        Full Stack Python Development
-                    </a>
-                    <a href="./courses.html#backend-python" data-course-target="backend-python">
-                        Backend with Python &amp; Django
-                    </a>
-                    <a href="./courses.html#frontend" data-course-target="frontend">
-                        Frontend Essentials
-                    </a>
-                    <a href="./courses.html#database" data-course-target="database">
-                        Database &amp; ORM
-                    </a>
-                    <a href="./courses.html#professional" data-course-target="professional">
-                        Professional Readiness
-                    </a>
+                <!-- Courses Dropdown -->
+                <div class="nav-item nav-has-dropdown nav-courses">
+                    <button type="button" class="nav-link nav-courses-toggle" aria-haspopup="true" aria-expanded="false">
+                        Courses <i class="fa-solid fa-chevron-down nav-caret"></i>
+                    </button>
+                    <div class="nav-dropdown nav-courses-dropdown">
+                        <a href="./courses.html#fullstack-python">Python Full Stack Development</a>
+                        <a href="./courses.html#backend-python">Backend with Python & Django</a>
+                        <a href="./courses.html#frontend">Frontend Essentials</a>
+                        <a href="./courses.html#database">Database & ORM</a>
+                        <a href="./courses.html#professional">Professional Readiness</a>
+                        <a href="./courses.html#sap-abap-training">SAP ABAP Training</a>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Events Dropdown (replacing Webinars) -->
-            <div class="nav-item nav-has-dropdown nav-events">
-                <button type="button" class="nav-link nav-events-toggle" aria-haspopup="true" aria-expanded="false">
-                    Events
-                    <i class="fa-solid fa-chevron-down nav-caret"></i>
-                </button>
-                <div class="nav-dropdown nav-events-dropdown">
-                    <a href="./register.html">Python Full Stack Webinar (Jan 2026)</a>
-                    <a href="./register.html">Django Best Practices Workshop</a>
-                    <a href="./register.html">Career Q&amp;A for Freshers</a>
+                <!-- Events Dropdown -->
+                <div class="nav-item nav-has-dropdown nav-events">
+                    <button type="button" class="nav-link nav-events-toggle" aria-haspopup="true" aria-expanded="false">
+                        Events <i class="fa-solid fa-chevron-down nav-caret"></i>
+                    </button>
+                    <div class="nav-dropdown nav-events-dropdown">
+                        <a href="./register.html">Upcoming Webinars</a>
+                        <a href="./register.html#recent">Recent Webinars</a>
+                    </div>
                 </div>
-            </div>
 
-            <a href="https://almanet.in/contact/" class="btn-outline">Contact Us</a>
-        </nav>
+                <a href="https://almanet.in/contact/" class="btn-outline">Contact Us</a>
+            </nav>
 
-        <!-- Mobile Navigation -->
-        <nav class="mobile-nav hidden">
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About</a>
+            <!-- Mobile Navigation -->
+            <nav class="mobile-nav hidden">
+                <a href="./index.html" class="active">Home</a>
+                <a href="./about.html">About</a>
 
-            <!-- Services (mobile dropdown) -->
-            <button type="button" class="mobile-services-toggle" aria-haspopup="true" aria-expanded="false">
-                Services
-                <i class="fa-solid fa-chevron-down nav-caret"></i>
+                <!-- Mobile Services -->
+                <button type="button" class="mobile-services-toggle" aria-haspopup="true" aria-expanded="false">
+                    Services <i class="fa-solid fa-chevron-down nav-caret"></i>
+                </button>
+                <div class="mobile-services-dropdown">
+                    <a href="./services/sap-hana-services.html">SAP HANA Services</a>
+                    <a href="./services/software-development.html">Software Development</a>
+                    <a href="./services/sap-successfactors.html">SAP SuccessFactors</a>
+                    <a href="./services/sap-abap-development.html">SAP ABAP Development</a>
+                    <a href="./services/salesforce-services.html">Salesforce</a>
+                    <a href="./services/it-advisory.html">IT Advisory</a>
+                    <a href="./services/sap-recruitment.html">SAP Recruitment</a>
+                    <a href="./services/sap-staffing-services.html">SAP Staffing Services</a>
+                </div>
+
+                <!-- Mobile Courses -->
+                <button type="button" class="mobile-courses-toggle" aria-haspopup="true" aria-expanded="false">
+                    Courses <i class="fa-solid fa-chevron-down nav-caret"></i>
+                </button>
+                <div class="mobile-courses-dropdown">
+                    <a href="./courses.html#fullstack-python" class="mobile-course-link">Python Full Stack Development</a>
+                    <a href="./courses.html#backend-python" class="mobile-course-link">Backend with Python & Django</a>
+                    <a href="./courses.html#frontend" class="mobile-course-link">Frontend Essentials</a>
+                    <a href="./courses.html#database" class="mobile-course-link">Database & ORM</a>
+                    <a href="./courses.html#professional" class="mobile-course-link">Professional Readiness</a>
+                    <a href="./courses.html#sap-abap-training" class="mobile-course-link">SAP ABAP Training</a>
+                </div>
+
+                <!-- Mobile Events -->
+                <button type="button" class="mobile-events-toggle" aria-haspopup="true" aria-expanded="false">
+                    Events <i class="fa-solid fa-chevron-down nav-caret"></i>
+                </button>
+                <div class="mobile-events-dropdown">
+                    <a href="./register.html" class="mobile-link">Upcoming Webinars</a>
+                    <a href="./register.html#recent" class="mobile-link">Recent Webinars</a>
+                </div>
+
+                <a href="https://almanet.in/contact/">Contact Us</a>
+            </nav>
+
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
             </button>
-            <div class="mobile-services-dropdown">
-                <a href="./services.html#software-development" class="mobile-link">Software Development</a>
-                <a href="./services.html#it-consulting" class="mobile-link">IT Consulting</a>
-                <a href="./services.html#training" class="mobile-link">Corporate Training</a>
-                <a href="./services.html#support" class="mobile-link">Support &amp; Maintenance</a>
-            </div>
-
-            <!-- Courses (existing behavior unchanged) -->
-            <button
-                type="button"
-                class="mobile-courses-toggle"
-                aria-haspopup="true"
-                aria-expanded="false"
-            >
-                Courses
-                <i class="fa-solid fa-chevron-down nav-caret"></i>
-            </button>
-            <div class="mobile-courses-dropdown">
-                <a href="./courses.html#fullstack-python" class="mobile-course-link" data-course-target="fullstack-python">
-                    Full Stack Python Development
-                </a>
-                <a href="./courses.html#backend-python" class="mobile-course-link" data-course-target="backend-python">
-                    Backend with Python &amp; Django
-                </a>
-                <a href="./courses.html#frontend" class="mobile-course-link" data-course-target="frontend">
-                    Frontend Essentials
-                </a>
-                <a href="./courses.html#database" class="mobile-course-link" data-course-target="database">
-                    Database &amp; ORM
-                </a>
-                <a href="./courses.html#professional" class="mobile-course-link" data-course-target="professional">
-                    Professional Readiness
-                </a>
-            </div>
-
-            <!-- Events (mobile dropdown) -->
-            <button type="button" class="mobile-events-toggle" aria-haspopup="true" aria-expanded="false">
-                Events
-                <i class="fa-solid fa-chevron-down nav-caret"></i>
-            </button>
-            <div class="mobile-events-dropdown">
-                <a href="./register.html" class="mobile-link">Python Full Stack Webinar (Jan 2026)</a>
-                <a href="./register.html" class="mobile-link">Django Best Practices Workshop</a>
-                <a href="./register.html" class="mobile-link">Career Q&amp;A for Freshers</a>
-            </div>
-
-            <a href="https://almanet.in/contact/">Contact Us</a>
-        </nav>
-
-        <button class="mobile-menu-btn" aria-label="Toggle Menu">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-    </div>
-</header>
+        </div>
+    </header>  
 
 <!-- Courses Hero Section -->
 <section class="courses-hero">
@@ -250,6 +223,35 @@
         </div>
     </div>
 
+    <!-- SAP ABAP Training -->
+    <div class="learn-card course-card" id="sap-abap-training" data-course="sap-abap">
+        <div class="course-header">
+            <i class="fa-solid fa-gears"></i>
+            <h4>SAP ABAP Training</h4>
+        </div>
+
+        <p class="course-summary">
+            Comprehensive SAP ABAP and ABAP on HANA training designed for beginners
+            and professionals to build real-world SAP development expertise.
+        </p>
+
+        <div class="course-meta">
+            <span><i class="fa-regular fa-clock"></i> 4–6 Months</span>
+            <span><i class="fa-solid fa-signal"></i> Beginner → Advanced</span>
+        </div>
+
+        <ul class="check-list" style="margin-top:.5rem;">
+            <li><i class="fa-solid fa-check-circle"></i> Core & Advanced ABAP Programming</li>
+            <li><i class="fa-solid fa-check-circle"></i> ALV Reports, OOABAP & Workflows</li>
+            <li><i class="fa-solid fa-check-circle"></i> ABAP on HANA, CDS & AMDP</li>
+        </ul>
+
+        <div class="course-actions" style="display:flex; gap:.5rem; margin-top:.75rem; flex-wrap:wrap;">
+            <button class="btn-primary view-details-btn">View Details</button>
+            <a class="btn-secondary" href="#" target="_blank" rel="noopener">Download Syllabus</a>
+        </div>
+    </div>
+
     <!-- Frontend -->
     <div class="learn-card course-card" id="frontend" data-course="frontend">
         <div class="course-header">
@@ -342,6 +344,6 @@
 
     <!-- Course Details Modal will be inserted by JavaScript -->
     
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>

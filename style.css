@@ -510,6 +510,30 @@ p {
     cursor: pointer;
 }
 
+/* Service page CTA buttons - inline, compact size */
+.service-cta-wrapper {
+    margin-top: var(--space-md);
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+}
+
+.service-cta-wrapper .btn-primary {
+    width: auto;
+    display: inline-flex;
+    padding: 12px 28px;
+    min-width: 160px;
+    height: auto;
+    min-height: 44px;
+    box-shadow: 0 2px 8px rgba(1, 130, 255, 0.2);
+}
+
+.service-cta-wrapper .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(1, 130, 255, 0.3);
+}
+
 .btn-primary:hover {
     background-color: var(--accent-hover);
 }
@@ -1593,6 +1617,17 @@ p {
     .services-cta-buttons .btn-primary,
     .services-cta-buttons .btn-secondary {
         width: 100%;
+    }
+    
+    /* Service page CTA buttons on mobile */
+    .service-cta-wrapper {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .service-cta-wrapper .btn-primary {
+        width: 100%;
+        justify-content: center;
     }
 }
 
