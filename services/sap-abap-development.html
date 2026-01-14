@@ -7,6 +7,7 @@
     <meta name="description" content="Enterprise SAP ABAP and ABAP on HANA development services by Almanet. Custom development, optimization, interfaces, workflows, and HANA migration.">
 
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./services.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +17,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body class="svc-page">
 
 <!-- HEADER -->
 <header class="main-header">
@@ -126,143 +127,160 @@
 </header>
 
 <!-- HERO -->
-<section class="services-hero">
+<section class="svc-hero" style="--svc-hero-bg: url('../image/SAP-banner-1024x331-1.jpg');">
     <div class="container">
-        <div class="services-hero-content">
-            <h1 class="services-hero-title">SAP ABAP Development Services</h1>
-            <p class="services-hero-subtitle">
-                Scalable, high-performance ABAP and ABAP on HANA solutions built for enterprise SAP landscapes.
+        <div>
+            <div class="svc-breadcrumbs">
+                <a href="../index.html">Home</a> / <a href="../index.html#services">Services</a> / SAP ABAP Development
+            </div>
+            <h1>SAP ABAP Development Services</h1>
+            <p>
+                Enterprise-grade ABAP and ABAP on HANA development to extend, optimize, and modernize SAP landscapes—
+                built for performance, maintainability, and scalable delivery.
             </p>
+            <div class="svc-hero-cta">
+                <a class="svc-btn-primary" href="https://almanet.in/contact/">
+                    Discuss Your Requirements <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a class="svc-btn-secondary" href="#offerings">View Offerings</a>
+            </div>
+        </div>
+
+        <div class="svc-hero-media">
+            <div class="svc-hero-card">
+                <img src="../image/sap-banner-3.webp" alt="SAP ABAP and ABAP on HANA development services">
+            </div>
         </div>
     </div>
 </section>
 
 <!-- MAIN CONTENT -->
-<main class="container" style="padding: var(--space-xl) 0;">
+<main class="svc-main">
+    <div class="container">
+        <section class="svc-section">
+            <h2 class="svc-section-title">Enterprise-Grade SAP ABAP Solutions</h2>
+            <p class="svc-lead">
+                From custom development and enhancements to interface build-out and performance tuning, our ABAP consultants
+                help you deliver reliable SAP outcomes while keeping code clean, testable, and upgrade-friendly.
+            </p>
+            <div class="svc-grid-2">
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3>Clean, maintainable builds</h3>
+                    <p>Structured development that aligns with SAP best practices and future upgrade paths.</p>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Enterprise controls</h3>
+                    <p>Quality gates, reviews, and documentation to reduce risk in complex SAP programs.</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- INTRO -->
-    <section class="section-block">
-        <h2 class="section-title">Enterprise-Grade SAP ABAP Solutions</h2>
-        <p class="lead-text">
-            Almanet Professional Services delivers robust SAP ABAP development services that extend, optimize,
-            and modernize SAP environments to meet evolving business requirements.
-        </p>
-        <p>
-            From custom development and enhancements to ABAP on HANA optimization,
-            our certified consultants ensure high performance, scalability, and long-term stability.
-        </p>
-    </section>
+        <section id="offerings" class="svc-section">
+            <h2 class="svc-section-title">Core SAP ABAP Development Services</h2>
+            <div class="svc-card-grid">
+                <article class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                    <h3>Custom development</h3>
+                    <p>Tailor-made ABAP solutions aligned to business needs, including transactions and reports.</p>
+                </article>
+                <article class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3>Enhancements</h3>
+                    <p>BAdIs, enhancement spots, user exits, and refactoring designed to stay upgrade-friendly.</p>
+                </article>
+                <article class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-table"></i></div>
+                    <h3>Reports &amp; ALV</h3>
+                    <p>Interactive ALV reporting and multi-module data extraction for business visibility.</p>
+                </article>
+                <article class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                    <h3>Workflows</h3>
+                    <p>Approvals, alerts, and process automation integrated with business rules.</p>
+                </article>
+                <article class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-arrows-turn-right"></i></div>
+                    <h3>Interfaces</h3>
+                    <p>IDocs, BAPIs, RFCs, and web services for SAP ↔ non-SAP integration.</p>
+                </article>
+                <article class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-bug-slash"></i></div>
+                    <h3>Optimization</h3>
+                    <p>Performance analysis and code tuning to improve response times and reliability.</p>
+                </article>
+            </div>
+        </section>
 
-    <!-- CORE ABAP SERVICES -->
-    <section class="section-block">
-        <h2 class="section-title">Core SAP ABAP Development Services</h2>
+        <section class="svc-section">
+            <h2 class="svc-section-title">ABAP on HANA Services</h2>
+            <ul class="svc-list">
+                <li><i class="fa-solid fa-circle-check"></i><span>ABAP code optimization for SAP HANA</span></li>
+                <li><i class="fa-solid fa-circle-check"></i><span>CDS Views, AMDPs, and SQL pushdown techniques</span></li>
+                <li><i class="fa-solid fa-circle-check"></i><span>Custom ABAP on HANA application development</span></li>
+                <li><i class="fa-solid fa-circle-check"></i><span>HANA migration support and post-migration optimization</span></li>
+                <li><i class="fa-solid fa-circle-check"></i><span>ABAP Development Tools (ADT) enablement and training</span></li>
+            </ul>
+        </section>
 
-        <h3>1. Custom ABAP Development</h3>
-        <ul class="check-list">
-            <li><i class="fa-solid fa-check-circle"></i> Tailor-made ABAP solutions aligned to business needs</li>
-            <li><i class="fa-solid fa-check-circle"></i> Custom SAP transactions and reports</li>
-            <li><i class="fa-solid fa-check-circle"></i> Integration with external systems (RFCs, Web Services)</li>
-            <li><i class="fa-solid fa-check-circle"></i> Enhancements using BAdIs, user exits, and customer exits</li>
-        </ul>
-
-        <h3>2. ABAP Enhancements & Modifications</h3>
-        <ul class="check-list">
-            <li><i class="fa-solid fa-check-circle"></i> SAP standard enhancements via enhancement spots & BAdIs</li>
-            <li><i class="fa-solid fa-check-circle"></i> Modification of standard SAP reports and interfaces</li>
-            <li><i class="fa-solid fa-check-circle"></i> Code optimization and refactoring</li>
-        </ul>
-
-        <h3>3. ABAP Report Development</h3>
-        <ul class="check-list">
-            <li><i class="fa-solid fa-check-circle"></i> Custom ALV and interactive reports</li>
-            <li><i class="fa-solid fa-check-circle"></i> Parameter-driven and structured reports</li>
-            <li><i class="fa-solid fa-check-circle"></i> Multi-module data extraction (FI, SD, MM, etc.)</li>
-        </ul>
-
-        <h3>4. ABAP Workflow Development</h3>
-        <ul class="check-list">
-            <li><i class="fa-solid fa-check-circle"></i> Custom SAP workflow development</li>
-            <li><i class="fa-solid fa-check-circle"></i> Approval, alert, and notification automation</li>
-            <li><i class="fa-solid fa-check-circle"></i> Integration with external systems</li>
-        </ul>
-
-        <h3>5. ABAP Interface Development</h3>
-        <ul class="check-list">
-            <li><i class="fa-solid fa-check-circle"></i> IDOCs, BAPIs, RFCs, and Web Services</li>
-            <li><i class="fa-solid fa-check-circle"></i> SAP ↔ non-SAP system integrations</li>
-            <li><i class="fa-solid fa-check-circle"></i> Secure and reliable data exchange</li>
-        </ul>
-    </section>
-
-    <!-- ABAP ON HANA -->
-    <section class="section-block">
-        <h2 class="section-title">ABAP on HANA Services</h2>
-
-        <ul class="check-list">
-            <li><i class="fa-solid fa-check-circle"></i> ABAP code optimization for SAP HANA</li>
-            <li><i class="fa-solid fa-check-circle"></i> CDS Views, AMDPs, and SQL pushdown techniques</li>
-            <li><i class="fa-solid fa-check-circle"></i> Custom ABAP on HANA application development</li>
-            <li><i class="fa-solid fa-check-circle"></i> SAP HANA migration & post-migration optimization</li>
-            <li><i class="fa-solid fa-check-circle"></i> ABAP Development Tools (ADT) in Eclipse setup & training</li>
-        </ul>
-    </section>
-
-    <!-- WHY ALMANET -->
-    <section class="section-block">
-        <h2 class="section-title">Why Choose Almanet?</h2>
-        <ul class="check-list">
-            <li><i class="fa-solid fa-check-circle"></i> SAP-certified ABAP & HANA consultants</li>
-            <li><i class="fa-solid fa-check-circle"></i> Industry-specific SAP expertise</li>
-            <li><i class="fa-solid fa-check-circle"></i> End-to-end development, support, and maintenance</li>
-            <li><i class="fa-solid fa-check-circle"></i> Performance-focused SAP solutions</li>
-        </ul>
-    </section>
-
-    <!-- CTA -->
-    <section class="section-block">
-        <h2 class="section-title">Get Started with SAP ABAP</h2>
-        <p class="lead-text">
-            Looking to enhance or modernize your SAP landscape with ABAP or ABAP on HANA?
-            Our experts are ready to help.
-        </p>
-
-        <div class="service-cta-wrapper">
-            <a href="https://almanet.in/contact/" class="btn-primary">Contact Us</a>
-        </div>
-
-        <p style="margin-top:1rem;">
-            <strong>Phone:</strong> +91 6264643660<br>
-            <strong>Email:</strong> info@almanet.in
-        </p>
-    </section>
-
+        <section class="svc-section">
+            <div class="svc-band">
+                <h3>Get Started with SAP ABAP</h3>
+                <p class="svc-lead" style="margin-top:0.25rem;">
+                    Need enhancements, integrations, or ABAP on HANA optimization? Our experts are ready to help.
+                </p>
+                <div class="svc-hero-cta">
+                    <a class="svc-btn-primary" href="https://almanet.in/contact/">
+                        Contact Us <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a class="svc-btn-secondary" href="mailto:info@almanet.in">info@almanet.in</a>
+                </div>
+                <p style="margin-top:0.75rem;color:var(--text-secondary);">
+                    <strong>Phone:</strong> +91 6264643660 &nbsp;&nbsp; <strong>Email:</strong> info@almanet.in
+                </p>
+            </div>
+        </section>
+    </div>
 </main>
 
 <!-- FOOTER -->
-<footer class="main-footer">
-    <div class="container footer-grid">
-        <div class="footer-col">
+<footer class="svc-footer">
+    <div class="container svc-footer-grid">
+        <div>
             <h5>Almanet Professional Services</h5>
-            <p>Empowering organizations and professionals with enterprise-grade IT solutions and training.</p>
+            <p>ABAP and ABAP on HANA expertise to modernize SAP landscapes and support enterprise delivery.</p>
         </div>
-        <div class="footer-col">
-            <h5>Quick Links</h5>
+        <div>
+            <h5>Services</h5>
             <ul>
-                <li><a href="../about.html">About Us</a></li>
-                <li><a href="../register.html">All Events</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
+                <li><a href="./sap-abap-development.html">SAP ABAP Development</a></li>
+                <li><a href="./sap-hana-services.html">SAP HANA Services</a></li>
+                <li><a href="./sap-successfactors.html">SAP SuccessFactors</a></li>
+                <li><a href="./salesforce-services.html">Salesforce</a></li>
             </ul>
         </div>
-        <div class="footer-col">
+        <div>
+            <h5>Company</h5>
+            <ul>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../courses.html">Courses</a></li>
+                <li><a href="../register.html">Webinars</a></li>
+                <li><a href="https://almanet.in/contact/">Contact</a></li>
+            </ul>
+        </div>
+        <div>
             <h5>Contact</h5>
-            <p style="margin-bottom: 0.5rem;"><i class="fa-solid fa-location-dot"></i> 1 Snehalataganj, Indore, MP</p>
-            <p style="margin-bottom: 0.5rem;"><i class="fa-solid fa-envelope"></i> info@almanet.in</p>
-            <p><i class="fa-solid fa-phone"></i> +91 6264643660</p>
+            <ul>
+                <li><i class="fa-solid fa-location-dot"></i> 1 Snehalataganj, Indore, MP</li>
+                <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@almanet.in">info@almanet.in</a></li>
+                <li><i class="fa-solid fa-phone"></i> <a href="tel:+916264643660">+91 6264643660</a></li>
+            </ul>
         </div>
     </div>
-    <div class="footer-bottom">
-        <p>&copy; 2025 Almanet Professional Services. All rights reserved.</p>
+    <div class="container svc-footer-bottom">
+        <span>&copy; 2025 Almanet Professional Services. All rights reserved.</span>
+        <span><a href="../index.html">Back to Home</a></span>
     </div>
 </footer>
 
