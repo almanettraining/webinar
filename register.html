@@ -19,15 +19,15 @@
 </head>
 
 <body>
-    <!-- Header / Navigation -->
-        <header class="main-header">
+    <!-- HEADER -->
+    <header class="main-header">
         <div class="container">
             <img src="https://almanet.in/wp-content/uploads/2022/03/Almanet-logo-220x47-1.png"
                 alt="Almanet Professional Services Logo" style="height: 40px;">
 
             <!-- Desktop Navigation -->
             <nav class="desktop-nav">
-                <a href="./index.html" class="active">Home</a>
+                <a href="./home.html">Home</a>
                 <a href="./about.html">About</a>
 
                 <!-- Services Dropdown -->
@@ -59,6 +59,7 @@
                         <a href="./courses.html#database">Database & ORM</a>
                         <a href="./courses.html#professional">Professional Readiness</a>
                         <a href="./courses.html#sap-abap-training">SAP ABAP Training</a>
+                        <a href="./courses.html#salesforce-training">Salesforce Training</a>
                     </div>
                 </div>
 
@@ -69,7 +70,7 @@
                     </button>
                     <div class="nav-dropdown nav-events-dropdown">
                         <a href="./register.html">Upcoming Webinars</a>
-                        <a href="./register.html#recent">Recent Webinars</a>
+                        <a href="./index.html">Recent Webinars</a>
                     </div>
                 </div>
 
@@ -78,7 +79,7 @@
 
             <!-- Mobile Navigation -->
             <nav class="mobile-nav hidden">
-                <a href="./index.html" class="active">Home</a>
+                <a href="./home.html">Home</a>
                 <a href="./about.html">About</a>
 
                 <!-- Mobile Services -->
@@ -107,6 +108,7 @@
                     <a href="./courses.html#database" class="mobile-course-link">Database & ORM</a>
                     <a href="./courses.html#professional" class="mobile-course-link">Professional Readiness</a>
                     <a href="./courses.html#sap-abap-training" class="mobile-course-link">SAP ABAP Training</a>
+                    <a href="./courses.html#salesforce-training" class="mobile-course-link">Salesforce Training</a>
                 </div>
 
                 <!-- Mobile Events -->
@@ -115,7 +117,7 @@
                 </button>
                 <div class="mobile-events-dropdown">
                     <a href="./register.html" class="mobile-link">Upcoming Webinars</a>
-                    <a href="./register.html#recent" class="mobile-link">Recent Webinars</a>
+                    <a href="./index.html" class="mobile-link">Recent Webinars</a>
                 </div>
 
                 <a href="https://almanet.in/contact/">Contact Us</a>
@@ -325,32 +327,46 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="main-footer" id="footer-contact">
-        <div class="container footer-grid">
-            <div class="footer-col">
+    <!-- Service-style Footer -->
+    <footer class="svc-footer">
+        <div class="container svc-footer-grid">
+            <div>
                 <h5>Almanet Professional Services</h5>
-                <p>Empowering the next generation of full stack developers with practical, industry-grade skills.</p>
+                <p>
+                    Enterprise consulting across SAP, Salesforce, and advisory services—focused on measurable outcomes and
+                    reliable delivery.
+                </p>
             </div>
-            <div class="footer-col">
-                <h5>Quick Links</h5>
+            <div>
+                <h5>Services</h5>
                 <ul>
-                    <li><a href="./about.html">About Us</a></li>
-                    <li><a href="./register.html">All Events</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="./services/sap-hana-services.html">SAP HANA Services</a></li>
+                    <li><a href="./services/sap-successfactors.html">SAP SuccessFactors</a></li>
+                    <li><a href="./services/sap-abap-development.html">SAP ABAP Development</a></li>
+                    <li><a href="./services/salesforce-services.html">Salesforce</a></li>
                 </ul>
             </div>
-            <div class="footer-col">
+            <div>
+                <h5>Company</h5>
+                <ul>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./courses.html">Courses</a></li>
+                    <li><a href="./register.html">Webinars</a></li>
+                    <li><a href="https://almanet.in/contact/">Contact</a></li>
+                </ul>
+            </div>
+            <div>
                 <h5>Contact</h5>
-                <p style="margin-bottom: 0.5rem;"><i class="fa-solid fa-location-dot"></i> 1 Snehalataganj, Indore, MP
-                </p>
-                <p style="margin-bottom: 0.5rem;"><i class="fa-solid fa-envelope"></i> info@almanet.in</p>
-                <p><i class="fa-solid fa-phone"></i> +91 6264643660</p>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> 1 Snehalataganj, Indore, MP</li>
+                    <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@almanet.in">info@almanet.in</a></li>
+                    <li><i class="fa-solid fa-phone"></i> <a href="tel:+916264643660">+91 6264643660</a></li>
+                </ul>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Almanet Professional Services. All rights reserved.</p>
+        <div class="container svc-footer-bottom">
+            <span>&copy; 2025 Almanet Professional Services. All rights reserved.</span>
+            <span><a href="./home.html">Back to Home</a></span>
         </div>
     </footer>
     <script src="script.js" defer></script>

@@ -692,6 +692,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <option value="frontend">Frontend Essentials</option>
                     <option value="sap-abap">SAP ABAP Training</option>
                     <option value="professional">Professional Readiness</option>
+                    <option value="salesforce-training">Salesforce Training</option>
                 </select>
             `;
             
@@ -707,6 +708,30 @@ document.addEventListener('DOMContentLoaded', () => {
         if (courseSelectField && selectedCourse && courseData[selectedCourse]) {
             courseSelectField.value = selectedCourse;
         }
+    }
+
+    // --- Home Page Tabs (Projects section) ---
+    const homeTabButtons = document.querySelectorAll('.home-tab-button');
+    const homeTabPanels = document.querySelectorAll('.home-tab-panel');
+
+    if (homeTabButtons.length && homeTabPanels.length) {
+        homeTabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const target = button.getAttribute('data-tab');
+                if (!target) return;
+
+                homeTabButtons.forEach(b => b.classList.remove('active'));
+                button.classList.add('active');
+
+                homeTabPanels.forEach(panel => {
+                    if (panel.getAttribute('data-tab-panel') === target) {
+                        panel.classList.add('is-active');
+                    } else {
+                        panel.classList.remove('is-active');
+                    }
+                });
+            });
+        });
     }
 
 });

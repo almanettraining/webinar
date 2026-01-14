@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almanet Professional Services | IT Services & Training</title>
+    <meta name="description"
+          content="Almanet Professional Services provides enterprise IT services and industry-ready training across SAP, Salesforce, and Full Stack development.">
+    <link rel="stylesheet" href="style.css?v=almanet">
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="https://almanet.in/wp-content/uploads/2022/03/cropped-Almanet-logo-1-32x32.png" sizes="32x32">
+    <meta name="theme-color" content="#0182FF">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="container">
+            <img src="https://almanet.in/wp-content/uploads/2022/03/Almanet-logo-220x47-1.png"
+                 alt="Almanet Professional Services Logo" style="height: 40px;">
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <a href="./home.html">Home</a>
+                <a href="./about.html">About</a>
+
+                <!-- Services Dropdown -->
+                <div class="nav-item nav-has-dropdown nav-services">
+                    <button type="button" class="nav-link nav-services-toggle" aria-haspopup="true" aria-expanded="false">
+                        Services <i class="fa-solid fa-chevron-down nav-caret"></i>
+                    </button>
+                    <div class="nav-dropdown nav-services-dropdown">
+                        <a href="./services/sap-hana-services.html">SAP HANA Services</a>
+                        <a href="./services/software-development.html">Software Development</a>
+                        <a href="./services/sap-successfactors.html">SAP SuccessFactors</a>
+                        <a href="./services/sap-abap-development.html">SAP ABAP Development</a>
+                        <a href="./services/salesforce-services.html">Salesforce</a>
+                        <a href="./services/it-advisory.html">IT Advisory</a>
+                        <a href="./services/sap-recruitment.html">SAP Recruitment</a>
+                        <a href="./services/sap-staffing-services.html">SAP Staffing Services</a>
+                    </div>
+                </div>
+
+                <!-- Courses Dropdown -->
+                <div class="nav-item nav-has-dropdown nav-courses">
+                    <button type="button" class="nav-link nav-courses-toggle" aria-haspopup="true" aria-expanded="false">
+                        Courses <i class="fa-solid fa-chevron-down nav-caret"></i>
+                    </button>
+                    <div class="nav-dropdown nav-courses-dropdown">
+                        <a href="./courses.html#fullstack-python">Python Full Stack Development</a>
+                        <a href="./courses.html#backend-python">Backend with Python & Django</a>
+                        <a href="./courses.html#frontend">Frontend Essentials</a>
+                        <a href="./courses.html#database">Database & ORM</a>
+                        <a href="./courses.html#professional">Professional Readiness</a>
+                        <a href="./courses.html#sap-abap-training">SAP ABAP Training</a>
+                        <a href="./courses.html#salesforce-training">Salesforce Training</a>
+                    </div>
+                </div>
+
+                <!-- Events Dropdown -->
+                <div class="nav-item nav-has-dropdown nav-events">
+                    <button type="button" class="nav-link nav-events-toggle" aria-haspopup="true" aria-expanded="false">
+                        Events <i class="fa-solid fa-chevron-down nav-caret"></i>
+                    </button>
+                    <div class="nav-dropdown nav-events-dropdown">
+                        <a href="./register.html">Upcoming Webinars</a>
+                        <a href="./index.html">Recent Webinars</a>
+                    </div>
+                </div>
+
+                <a href="https://almanet.in/contact/" class="btn-outline">Contact Us</a>
+            </nav>
+
+            <!-- Mobile Navigation -->
+            <nav class="mobile-nav hidden">
+                <a href="./home.html">Home</a>
+                <a href="./about.html">About</a>
+
+                <!-- Mobile Services -->
+                <button type="button" class="mobile-services-toggle" aria-haspopup="true" aria-expanded="false">
+                    Services <i class="fa-solid fa-chevron-down nav-caret"></i>
+                </button>
+                <div class="mobile-services-dropdown">
+                    <a href="./services/sap-hana-services.html">SAP HANA Services</a>
+                    <a href="./services/software-development.html">Software Development</a>
+                    <a href="./services/sap-successfactors.html">SAP SuccessFactors</a>
+                    <a href="./services/sap-abap-development.html">SAP ABAP Development</a>
+                    <a href="./services/salesforce-services.html">Salesforce</a>
+                    <a href="./services/it-advisory.html">IT Advisory</a>
+                    <a href="./services/sap-recruitment.html">SAP Recruitment</a>
+                    <a href="./services/sap-staffing-services.html">SAP Staffing Services</a>
+                </div>
+
+                <!-- Mobile Courses -->
+                <button type="button" class="mobile-courses-toggle" aria-haspopup="true" aria-expanded="false">
+                    Courses <i class="fa-solid fa-chevron-down nav-caret"></i>
+                </button>
+                <div class="mobile-courses-dropdown">
+                    <a href="./courses.html#fullstack-python" class="mobile-course-link">Python Full Stack Development</a>
+                    <a href="./courses.html#backend-python" class="mobile-course-link">Backend with Python & Django</a>
+                    <a href="./courses.html#frontend" class="mobile-course-link">Frontend Essentials</a>
+                    <a href="./courses.html#database" class="mobile-course-link">Database & ORM</a>
+                    <a href="./courses.html#professional" class="mobile-course-link">Professional Readiness</a>
+                    <a href="./courses.html#sap-abap-training" class="mobile-course-link">SAP ABAP Training</a>
+                    <a href="./courses.html#salesforce-training" class="mobile-course-link">Salesforce Training</a>
+                </div>
+
+                <!-- Mobile Events -->
+                <button type="button" class="mobile-events-toggle" aria-haspopup="true" aria-expanded="false">
+                    Events <i class="fa-solid fa-chevron-down nav-caret"></i>
+                </button>
+                <div class="mobile-events-dropdown">
+                    <a href="./register.html" class="mobile-link">Upcoming Webinars</a>
+                    <a href="./index.html" class="mobile-link">Recent Webinars</a>
+                </div>
+
+                <a href="https://almanet.in/contact/">Contact Us</a>
+            </nav>
+
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- SECTION 1 — HERO -->
+    <section class="home-hero">
+        <div class="container home-hero-grid">
+            <div class="home-hero-text">
+                <p class="home-hero-kicker">SAP Automation</p>
+                <h1>
+                    Leading the Way for<br>
+                    <span class="home-hero-highlight">SAP Implementation &amp; Cloud Solutions</span>
+                </h1>
+                <p class="home-hero-subtitle">
+                    Almanet Professional Services helps organisations modernise their SAP landscapes, move to the cloud,
+                    and unlock real business value from technology investments.
+                </p>
+
+                <div class="home-hero-actions">
+                    <a href="#services" class="btn-primary">
+                        Explore More
+                    </a>
+                </div>
+
+                <div class="home-hero-meta">
+                    <span><i class="fa-solid fa-briefcase"></i> SAP Implementation &amp; Support</span>
+                    <span><i class="fa-solid fa-cloud-arrow-up"></i> Cloud Migration &amp; Automation</span>
+                </div>
+            </div>
+
+            <aside class="home-hero-card">
+                <div class="home-hero-card-header">
+                    <h4>See How Our Services Work</h4>
+                    <p>Discover how we combine SAP, Salesforce, and custom development to accelerate transformation.</p>
+                </div>
+                <ul class="home-hero-list">
+                    <li>
+                        <i class="fa-solid fa-diagram-project"></i>
+                        <span>End-to-end SAP implementation &amp; rollout support</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-cloud"></i>
+                        <span>Cloud migration strategies tailored to your landscape</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-users-gear"></i>
+                        <span>IT advisory and managed services for CXOs &amp; teams</span>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </section>
+
+    <!-- SECTION 2 — SERVICES OVERVIEW -->
+    <section class="home-section home-services" id="services">
+        <div class="container">
+            <p class="home-section-kicker">Services</p>
+            <h2 class="section-title">Our Provided Services</h2>
+            <p class="lead-text">
+                We deliver end‑to‑end IT solutions across SAP, Salesforce, and software engineering—helping organisations
+                implement, optimise, and support mission‑critical systems.
+            </p>
+
+            <div class="home-services-grid">
+                <article class="service-card home-service-card">
+                    <div class="service-icon"><i class="fa-solid fa-database"></i></div>
+                    <h3 class="service-title">SAP HANA Services</h3>
+                    <p class="service-description">
+                        Implement, migrate, and optimise SAP HANA to power real‑time analytics and high‑performance operations.
+                    </p>
+                    <div class="service-cta-wrapper">
+                        <a href="./services/sap-hana-services.html" class="btn-secondary">Learn More</a>
+                    </div>
+                </article>
+
+                <article class="service-card home-service-card">
+                    <div class="service-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h3 class="service-title">SAP ABAP on HANA Training</h3>
+                    <p class="service-description">
+                        Deep‑dive training on ABAP for HANA, CDS, AMDP, and performance‑driven development practices.
+                    </p>
+                    <div class="service-cta-wrapper">
+                        <a href="./services/sap-abap-development.html" class="btn-secondary">View Training</a>
+                    </div>
+                </article>
+
+                <article class="service-card home-service-card">
+                    <div class="service-icon"><i class="fa-solid fa-user-group"></i></div>
+                    <h3 class="service-title">SAP SuccessFactors</h3>
+                    <p class="service-description">
+                        Transform HR with cloud HXM—from core HR to talent, learning, and performance management.
+                    </p>
+                    <div class="service-cta-wrapper">
+                        <a href="./services/sap-successfactors.html" class="btn-secondary">View Service</a>
+                    </div>
+                </article>
+
+                <article class="service-card home-service-card">
+                    <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3 class="service-title">SAP ABAP Development</h3>
+                    <p class="service-description">
+                        Modern ABAP and ABAP on HANA development for extensions, integrations, and performance‑tuned solutions.
+                    </p>
+                    <div class="service-cta-wrapper">
+                        <a href="./services/sap-abap-development.html" class="btn-secondary">View Service</a>
+                    </div>
+                </article>
+
+                <article class="service-card home-service-card">
+                    <div class="service-icon"><i class="fa-brands fa-salesforce"></i></div>
+                    <h3 class="service-title">Salesforce</h3>
+                    <p class="service-description">
+                        Consulting and development across Salesforce CRM, Lightning, and integrations for sales and service.
+                    </p>
+                    <div class="service-cta-wrapper">
+                        <a href="./services/salesforce-services.html" class="btn-secondary">View Service</a>
+                    </div>
+                </article>
+
+                <article class="service-card home-service-card">
+                    <div class="service-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                    <h3 class="service-title">SAP Maintenance &amp; Support</h3>
+                    <p class="service-description">
+                        Ongoing SAP support, enhancements, and change management to keep your landscape stable and secure.
+                    </p>
+                    <div class="service-cta-wrapper">
+                        <a href="./services/sap-hana-services.html" class="btn-secondary">Explore Support</a>
+                    </div>
+                </article>
+
+                <article class="service-card home-service-card">
+                    <div class="service-icon"><i class="fa-solid fa-chalkboard-teacher"></i></div>
+                    <h3 class="service-title">SAP ABAP Training</h3>
+                    <p class="service-description">
+                        Structured ABAP programmes for freshers and professionals building a career in SAP development.
+                    </p>
+                    <div class="service-cta-wrapper">
+                        <a href="./services/sap-abap-development.html" class="btn-secondary">Explore Training</a>
+                    </div>
+                </article>
+
+                <article class="service-card home-service-card">
+                    <div class="service-icon"><i class="fa-solid fa-user-tie"></i></div>
+                    <h3 class="service-title">IT Advisor</h3>
+                    <p class="service-description">
+                        Strategic IT advisory for CXOs—prioritising investments, de‑risking programmes, and shaping roadmaps.
+                    </p>
+                    <div class="service-cta-wrapper">
+                        <a href="./services/it-advisory.html" class=" btn-secondary">Meet Our Advisors</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3 — PROJECTS / SOLUTIONS -->
+    <section class="home-section home-projects" id="projects">
+        <div class="container">
+            <p class="home-section-kicker">IT Automation and projects</p>
+            <h2 class="section-title">Our Latest Projects</h2>
+            <p class="lead-text">
+                From greenfield implementations to complex migrations, we partner with clients to deliver measurable outcomes
+                across cloud, ERP, CRM, and analytics initiatives.
+            </p>
+
+            <div class="home-tabs">
+                <div class="home-tabs-header">
+                    <button class="home-tab-button active" data-tab="cloud">Cloud Services</button>
+                    <button class="home-tab-button" data-tab="enterprise">Enterprise Solutions</button>
+                </div>
+
+                <div class="home-tab-panels">
+                    <div class="home-tab-panel is-active" data-tab-panel="cloud">
+                        <div class="home-projects-grid">
+                            <article class="project-card">
+                                <div class="project-icon">
+                                    <i class="fa-solid fa-server"></i>
+                                </div>
+                                <h3>SAP Implementation</h3>
+                                <p>
+                                    End‑to‑end SAP S/4HANA implementations with focus on process design, data migration,
+                                    and change management.
+                                </p>
+                            </article>
+
+                            <article class="project-card">
+                                <div class="project-icon">
+                                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                                </div>
+                                <h3>Cloud Migration</h3>
+                                <p>
+                                    Moving SAP and custom workloads to hyperscale clouds with resilient, secure architectures.
+                                </p>
+                            </article>
+
+                            <article class="project-card">
+                                <div class="project-icon">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                </div>
+                                <h3>SAP Maintenance &amp; Support</h3>
+                                <p>
+                                    Long‑term support engagements ensuring stability, performance, and continuous improvement.
+                                </p>
+                            </article>
+
+                            <article class="project-card">
+                                <div class="project-icon">
+                                    <i class="fa-solid fa-brain"></i>
+                                </div>
+                                <h3>AI &amp; ML Solutions</h3>
+                                <p>
+                                    Applying AI and machine learning patterns to extend SAP and enterprise solutions with intelligence.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="home-tab-panel" data-tab-panel="enterprise">
+                        <div class="home-projects-grid">
+                            <article class="project-card">
+                                <div class="project-icon">
+                                    <i class="fa-solid fa-diagram-project"></i>
+                                </div>
+                                <h3>ERP Systems</h3>
+                                <p>
+                                    Designing and integrating ERP solutions tailored to manufacturing, services, and public sector clients.
+                                </p>
+                            </article>
+
+                            <article class="project-card">
+                                <div class="project-icon">
+                                    <i class="fa-solid fa-handshake-angle"></i>
+                                </div>
+                                <h3>CRM Solutions</h3>
+                                <p>
+                                    Customer‑centric CRM implementations across Salesforce and SAP to improve sales and service outcomes.
+                                </p>
+                            </article>
+
+                            <article class="project-card">
+                                <div class="project-icon">
+                                    <i class="fa-solid fa-chart-pie"></i>
+                                </div>
+                                <h3>Business Intelligence</h3>
+                                <p>
+                                    Data warehousing and BI solutions providing actionable dashboards and KPI monitoring for leadership.
+                                </p>
+                            </article>
+
+                            <article class="project-card">
+                                <div class="project-icon">
+                                    <i class="fa-solid fa-infinity"></i>
+                                </div>
+                                <h3>DevOps Services</h3>
+                                <p>
+                                    CI/CD pipelines, infrastructure as code, and environment automation for faster, safer releases.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4 — CTA -->
+    <section class="home-cta-band">
+        <div class="container home-cta-grid">
+            <div>
+                <h2>Empower Your Business with Modern SAP &amp; Cloud Solutions</h2>
+                <p class="lead-text">
+                    Ready to explore how Almanet can support your next implementation, migration, or training initiative?
+                    Share your requirements and we’ll respond with a tailored proposal.
+                </p>
+            </div>
+            <div class="home-cta-actions">
+                <a href="https://almanet.in/contact/" class="btn-primary">Get Free Proposal</a>
+                <a href="./register.html" class="btn-secondary">See Upcoming Webinars</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service-style Footer -->
+    <footer class="svc-footer">
+        <div class="container svc-footer-grid">
+            <div>
+                <h5>Almanet Professional Services</h5>
+                <p>
+                    Enterprise consulting across SAP, Salesforce, and advisory services—focused on measurable outcomes and
+                    reliable delivery.
+                </p>
+            </div>
+            <div>
+                <h5>Services</h5>
+                <ul>
+                    <li><a href="./services/sap-hana-services.html">SAP HANA Services</a></li>
+                    <li><a href="./services/sap-successfactors.html">SAP SuccessFactors</a></li>
+                    <li><a href="./services/sap-abap-development.html">SAP ABAP Development</a></li>
+                    <li><a href="./services/salesforce-services.html">Salesforce</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5>Company</h5>
+                <ul>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./courses.html">Courses</a></li>
+                    <li><a href="./register.html">Webinars</a></li>
+                    <li><a href="https://almanet.in/contact/">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5>Contact</h5>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> 1 Snehalataganj, Indore, MP</li>
+                    <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@almanet.in">info@almanet.in</a></li>
+                    <li><i class="fa-solid fa-phone"></i> <a href="tel:+916264643660">+91 6264643660</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container svc-footer-bottom">
+            <span>&copy; 2025 Almanet Professional Services. All rights reserved.</span>
+            <span><a href="./home.html">Back to Home</a></span>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
+
