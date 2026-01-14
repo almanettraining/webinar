@@ -7,6 +7,7 @@
     <meta name="description" content="SAP staffing and recruitment services delivering top SAP talent for enterprise projects.">
 
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./services.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +17,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body class="svc-page">
 
 <!-- HEADER -->
 <header class="main-header">
@@ -126,143 +127,204 @@
 </header>
 
 <!-- HERO -->
-<section class="services-hero">
+<section class="svc-hero" style="--svc-hero-bg: url('../image/SAP-banner-1024x331-1.jpg');">
     <div class="container">
-        <div class="services-hero-content">
-            <h1 class="services-hero-title">SAP Staffing Services</h1>
-            <p class="services-hero-subtitle">
-                Hire the right SAP talent to drive enterprise transformation and business success.
+        <div>
+            <div class="svc-breadcrumbs">
+                <a href="../index.html">Home</a> / <a href="../index.html#services">Services</a> / SAP Staffing Services
+            </div>
+            <h1>SAP Staffing Services</h1>
+            <p>
+                SAP recruitment solutions for your business. Hire the right SAP talent to drive transformation with flexible
+                engagement models—permanent, contract, or executive search.
             </p>
+            <div class="svc-hero-cta">
+                <a class="svc-btn-primary" href="https://almanet.in/contact/">
+                    Hire SAP Talent <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a class="svc-btn-secondary" href="#models">Staffing Models</a>
+            </div>
+        </div>
+
+        <div class="svc-hero-media">
+            <div class="svc-hero-card">
+                <img src="../image/sap-banner-3.webp" alt="SAP staffing and recruitment services">
+            </div>
         </div>
     </div>
 </section>
 
 <!-- MAIN CONTENT -->
-<main class="container" style="padding: var(--space-xl) 0;">
+<main class="svc-main">
+    <div class="container">
+        <section class="svc-section">
+            <h2 class="svc-section-title">Hire the Best SAP Talent</h2>
+            <p class="svc-lead">
+                The success of SAP initiatives depends on having the right people. We connect organizations with experienced
+                SAP consultants, developers, architects, and project managers who deliver real business value.
+            </p>
+        </section>
 
-    <!-- INTRO -->
-    <section class="section-block">
-        <h2 class="section-title">Hire the Best SAP Talent</h2>
-        <p class="lead-text">
-            The success of SAP initiatives depends on having the right people.
-        </p>
-        <p>
-            Almanet Professional Services delivers specialized SAP staffing solutions,
-            connecting organizations with experienced SAP consultants, developers,
-            architects, and project managers who can deliver real business value.
-        </p>
-    </section>
-
-    <!-- WHY PARTNER -->
-    <section class="section-block">
-        <h2 class="section-title">Why Partner with Us</h2>
-        <ul class="check-list">
-            <li><i class="fa-solid fa-check-circle"></i> Deep expertise across SAP S/4HANA, ECC, ABAP, Fiori</li>
-            <li><i class="fa-solid fa-check-circle"></i> Tailored recruitment aligned to project goals</li>
-            <li><i class="fa-solid fa-check-circle"></i> Global network of certified SAP professionals</li>
-            <li><i class="fa-solid fa-check-circle"></i> Fast, efficient hiring for time-critical projects</li>
-        </ul>
-    </section>
-
-    <!-- STAFFING MODELS -->
-    <section class="section-block">
-        <h2 class="section-title">Our SAP Staffing Services</h2>
-        <div class="learning-grid">
-            <div class="learn-card">
-                <h4>Permanent SAP Staffing</h4>
-                <p>Hire full-time SAP professionals who drive long-term business outcomes.</p>
+        <section class="svc-section">
+            <h2 class="svc-section-title">Why Partner with Us</h2>
+            <div class="svc-card-grid">
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-certificate"></i></div>
+                    <h3>Certified SAP network</h3>
+                    <p>Access certified professionals across SAP S/4HANA, ECC, ABAP, Fiori, Basis, and more.</p>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-bullseye"></i></div>
+                    <h3>Role-fit matching</h3>
+                    <p>Tailored shortlisting aligned to project scope, timelines, and delivery expectations.</p>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-globe"></i></div>
+                    <h3>Global reach</h3>
+                    <p>Access to talent pools for local and international SAP project needs.</p>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-stopwatch"></i></div>
+                    <h3>Fast turnaround</h3>
+                    <p>Efficient hiring process for time-critical initiatives with clear communication.</p>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-user-check"></i></div>
+                    <h3>Screened candidates</h3>
+                    <p>Technical and soft-skill screening to improve interview-to-hire conversion.</p>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-handshake"></i></div>
+                    <h3>Placement support</h3>
+                    <p>Onboarding coordination and post-placement support to reduce churn risk.</p>
+                </div>
             </div>
-            <div class="learn-card">
-                <h4>Contract SAP Staffing</h4>
-                <p>Access expert SAP talent for specific projects with flexible engagement models.</p>
+        </section>
+
+        <section id="models" class="svc-section">
+            <h2 class="svc-section-title">Our SAP Staffing Services</h2>
+            <div class="svc-card-grid">
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-user-tie"></i></div>
+                    <h3>Permanent staffing</h3>
+                    <p>Hire full-time SAP professionals who drive long-term business outcomes.</p>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-briefcase"></i></div>
+                    <h3>Contract staffing</h3>
+                    <p>Engage expert SAP talent for specific projects with flexible duration and scope.</p>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-crown"></i></div>
+                    <h3>Executive search</h3>
+                    <p>Identify leaders including SAP project managers, architects, and program executives.</p>
+                </div>
             </div>
-            <div class="learn-card">
-                <h4>Executive Search</h4>
-                <p>Identify SAP leaders including project managers, architects, and executives.</p>
+        </section>
+
+        <section class="svc-section">
+            <h2 class="svc-section-title">Roles We Recruit For</h2>
+            <ul class="svc-list">
+                <li><i class="fa-solid fa-circle-check"></i><span>SAP Functional Consultants (FI/CO, MM, SD, HCM)</span></li>
+                <li><i class="fa-solid fa-circle-check"></i><span>SAP Technical Consultants (ABAP, Basis, Fiori, S/4HANA)</span></li>
+                <li><i class="fa-solid fa-circle-check"></i><span>SAP Project Managers and Delivery Leads</span></li>
+                <li><i class="fa-solid fa-circle-check"></i><span>SAP Data &amp; Analytics Specialists (BW, BI)</span></li>
+            </ul>
+        </section>
+
+        <section class="svc-section">
+            <h2 class="svc-section-title">Our Recruitment Process</h2>
+            <div class="svc-card-grid">
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-clipboard"></i></div>
+                    <h3>Requirements</h3>
+                    <p>Client consultation and role definition aligned to delivery expectations.</p>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <h3>Sourcing</h3>
+                    <p>Candidate sourcing from our global SAP talent pool.</p>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-user-check"></i></div>
+                    <h3>Screening</h3>
+                    <p>Technical and soft-skill screening to ensure role fit.</p>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-file-lines"></i></div>
+                    <h3>Shortlist</h3>
+                    <p>Candidate presentation with clear availability and expectations.</p>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-door-open"></i></div>
+                    <h3>Onboarding</h3>
+                    <p>Seamless onboarding support and follow-up after placement.</p>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-handshake"></i></div>
+                    <h3>Support</h3>
+                    <p>Post-placement support to ensure continuity and success.</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ROLES -->
-    <section class="section-block">
-        <h2 class="section-title">Roles We Recruit For</h2>
-        <ul class="check-list">
-            <li><i class="fa-solid fa-check-circle"></i> SAP Functional Consultants (FI/CO, MM, SD, HCM)</li>
-            <li><i class="fa-solid fa-check-circle"></i> SAP Technical Consultants (ABAP, Basis, Fiori, S/4HANA)</li>
-            <li><i class="fa-solid fa-check-circle"></i> SAP Project Managers</li>
-            <li><i class="fa-solid fa-check-circle"></i> SAP Data & Analytics Specialists (BW, BI)</li>
-        </ul>
-    </section>
-
-    <!-- INDUSTRIES -->
-    <section class="section-block">
-        <h2 class="section-title">Industries We Serve</h2>
-        <ul class="check-list">
-            <li><i class="fa-solid fa-industry"></i> Manufacturing</li>
-            <li><i class="fa-solid fa-store"></i> Retail</li>
-            <li><i class="fa-solid fa-coins"></i> Finance</li>
-            <li><i class="fa-solid fa-heartbeat"></i> Healthcare</li>
-            <li><i class="fa-solid fa-car"></i> Automotive</li>
-        </ul>
-    </section>
-
-    <!-- PROCESS -->
-    <section class="section-block">
-        <h2 class="section-title">Our Recruitment Process</h2>
-        <ul class="check-list">
-            <li><i class="fa-solid fa-check-circle"></i> Client consultation & requirement analysis</li>
-            <li><i class="fa-solid fa-check-circle"></i> Candidate sourcing from global SAP talent pool</li>
-            <li><i class="fa-solid fa-check-circle"></i> Technical and soft-skill screening</li>
-            <li><i class="fa-solid fa-check-circle"></i> Candidate presentation & selection</li>
-            <li><i class="fa-solid fa-check-circle"></i> Seamless onboarding & post-placement support</li>
-        </ul>
-    </section>
-
-    <!-- CTA -->
-    <section class="section-block">
-        <h2 class="section-title">Build Your SAP Team with Confidence</h2>
-        <p class="lead-text">
-            Partner with Almanet Professional Services to secure top SAP talent
-            and ensure the success of your SAP initiatives.
-        </p>
-
-        <div class="service-cta-wrapper">
-            <a href="https://almanet.in/contact/" class="btn-primary">Contact Us</a>
-        </div>
-
-        <p style="margin-top:1rem;">
-            <strong>Phone:</strong> +91 6264643660<br>
-            <strong>Email:</strong> info@almanet.in
-        </p>
-    </section>
-
+        <section class="svc-section">
+            <div class="svc-band">
+                <h3>Build Your SAP Team with Confidence</h3>
+                <p class="svc-lead" style="margin-top:0.25rem;">
+                    Partner with Almanet Professional Services to secure top SAP talent and deliver successful outcomes.
+                </p>
+                <div class="svc-hero-cta">
+                    <a class="svc-btn-primary" href="https://almanet.in/contact/">
+                        Contact Us <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a class="svc-btn-secondary" href="mailto:info@almanet.in">info@almanet.in</a>
+                </div>
+                <p style="margin-top:0.75rem;color:var(--text-secondary);">
+                    <strong>Phone:</strong> +91 6264643660 &nbsp;&nbsp; <strong>Email:</strong> info@almanet.in
+                </p>
+            </div>
+        </section>
+    </div>
 </main>
 
 <!-- FOOTER -->
-<footer class="main-footer">
-    <div class="container footer-grid">
-        <div class="footer-col">
+<footer class="svc-footer">
+    <div class="container svc-footer-grid">
+        <div>
             <h5>Almanet Professional Services</h5>
-            <p>Empowering organizations and professionals with enterprise-grade IT solutions and training.</p>
+            <p>SAP staffing and recruitment services that help you build delivery-ready teams quickly and confidently.</p>
         </div>
-        <div class="footer-col">
-            <h5>Quick Links</h5>
+        <div>
+            <h5>Services</h5>
             <ul>
-                <li><a href="../about.html">About Us</a></li>
-                <li><a href="../register.html">All Events</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
+                <li><a href="./sap-staffing-services.html">SAP Staffing Services</a></li>
+                <li><a href="./sap-recruitment.html">SAP Recruitment</a></li>
+                <li><a href="./sap-abap-development.html">SAP ABAP Development</a></li>
+                <li><a href="./it-advisory.html">IT Advisory</a></li>
             </ul>
         </div>
-        <div class="footer-col">
+        <div>
+            <h5>Company</h5>
+            <ul>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../courses.html">Courses</a></li>
+                <li><a href="../register.html">Webinars</a></li>
+                <li><a href="https://almanet.in/contact/">Contact</a></li>
+            </ul>
+        </div>
+        <div>
             <h5>Contact</h5>
-            <p style="margin-bottom: 0.5rem;"><i class="fa-solid fa-location-dot"></i> 1 Snehalataganj, Indore, MP</p>
-            <p style="margin-bottom: 0.5rem;"><i class="fa-solid fa-envelope"></i> info@almanet.in</p>
-            <p><i class="fa-solid fa-phone"></i> +91 6264643660</p>
+            <ul>
+                <li><i class="fa-solid fa-location-dot"></i> 1 Snehalataganj, Indore, MP</li>
+                <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@almanet.in">info@almanet.in</a></li>
+                <li><i class="fa-solid fa-phone"></i> <a href="tel:+916264643660">+91 6264643660</a></li>
+            </ul>
         </div>
     </div>
-    <div class="footer-bottom">
-        <p>&copy; 2025 Almanet Professional Services. All rights reserved.</p>
+    <div class="container svc-footer-bottom">
+        <span>&copy; 2025 Almanet Professional Services. All rights reserved.</span>
+        <span><a href="../index.html">Back to Home</a></span>
     </div>
 </footer>
 

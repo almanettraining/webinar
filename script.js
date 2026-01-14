@@ -431,6 +431,27 @@ document.addEventListener('DOMContentLoaded', () => {
                 'Networking strategies',
                 'Career guidance'
             ]
+        },
+        'sap-abap': {
+            title: 'SAP ABAP Training',
+            icon: 'fa-solid fa-gears',
+            description: 'Comprehensive SAP ABAP and ABAP on HANA training designed for beginners and professionals. Build real-world SAP development skills across reports, enhancements, interfaces, and modern HANA-optimized techniques.',
+            duration: '4–6 Months',
+            level: 'Beginner → Advanced',
+            topics: [
+                'ABAP fundamentals: data types, internal tables, modularization',
+                'Reports: classical, interactive ALV, and performance best practices',
+                'Enhancements: user exits, BAdIs, enhancement framework',
+                'OOABAP: classes, interfaces, patterns for maintainable code',
+                'Interfaces: IDoc, BAPI/RFC, Web Services & integrations',
+                'Workflows and approvals (overview and common scenarios)',
+                'ABAP on HANA: SQL pushdown concepts and performance tuning',
+                'CDS Views & basics of data modeling for S/4HANA',
+                'AMDP intro and when to use it',
+                'Debugging, transports, and production-ready practices'
+            ],
+            eligibility: 'Basic programming knowledge is helpful. Freshers and working professionals can enroll.',
+            tools: ['SAP GUI', 'ABAP Development Tools (ADT)', 'Eclipse (ADT)', 'S/4HANA concepts']
         }
     };
 
@@ -669,6 +690,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <option value="backend-python">Backend with Python & Django</option>
                     <option value="database-orm">Database & ORM</option>
                     <option value="frontend">Frontend Essentials</option>
+                    <option value="sap-abap">SAP ABAP Training</option>
                     <option value="professional">Professional Readiness</option>
                 </select>
             `;

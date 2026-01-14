@@ -7,6 +7,7 @@
     <meta name="description" content="Strategic IT advisory, business consulting, and transformation services by Almanet Professional Services.">
 
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./services.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +17,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body class="svc-page">
 
 <!-- HEADER -->
 <header class="main-header">
@@ -126,158 +127,176 @@
 </header>
 
 <!-- HERO -->
-<section class="services-hero">
+<section class="svc-hero" style="--svc-hero-bg: url('../image/IT-Advisor-02.png');">
     <div class="container">
-        <div class="services-hero-content">
-            <h1 class="services-hero-title">IT Advisory & Business Consulting</h1>
-            <p class="services-hero-subtitle">
-                Strategic guidance to help organizations extract real value from technology and drive sustainable growth.
+        <div>
+            <div class="svc-breadcrumbs">
+                <a href="../index.html">Home</a> / <a href="../index.html#services">Services</a> / IT Advisors
+            </div>
+            <h1>On Demand, Affordable, and Impactful IT Consulting Service</h1>
+            <p>
+                Your potential meets experience. Get strategic guidance to extract real value from IT investments,
+                reduce delivery risk, and accelerate transformation programs.
             </p>
+            <div class="svc-hero-cta">
+                <a class="svc-btn-primary" href="https://almanet.in/contact/">
+                    Speak with an Advisor <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a class="svc-btn-secondary" href="#engagement">Engagement Options</a>
+            </div>
+        </div>
+
+        <div class="svc-hero-media">
+            <div class="svc-hero-card">
+                <img src="../image/IT-Advisor.png" alt="IT advisory and consulting">
+            </div>
         </div>
     </div>
 </section>
 
 <!-- MAIN CONTENT -->
-<main class="container" style="padding: var(--space-xl) 0;">
+<main class="svc-main">
+    <div class="container">
+        <section class="svc-section">
+            <h2 class="svc-section-title">Strategic IT Advisory</h2>
+            <p class="svc-lead">
+                Not every organization has the skills or capabilities to extract value from IT investments. Those that do gain
+                a decisive competitive advantage. Our IT Advisors support strategic and tactical decisions across business IT.
+            </p>
+        </section>
 
-    <!-- INTRO -->
-    <section class="section-block">
-        <h2 class="section-title">Strategic IT Advisory</h2>
-        <p class="lead-text">
-            Not every organization has the skills or capabilities to extract value from IT investments.
-            Those that do gain a decisive competitive advantage.
-        </p>
-        <p>
-            Almanet’s IT Advisors provide expert guidance across strategic and tactical aspects of business IT,
-            helping organizations make informed decisions, reduce risks, and improve outcomes.
-        </p>
-    </section>
-
-    <!-- ENGAGEMENT OPTIONS -->
-    <section class="section-block">
-        <h2 class="section-title">Engagement Options</h2>
-        <ul class="check-list">
-            <li><i class="fa-solid fa-check-circle"></i> Strategic and tactical IT advisory</li>
-            <li><i class="fa-solid fa-check-circle"></i> Second opinion before major IT investments</li>
-            <li><i class="fa-solid fa-check-circle"></i> Quality assurance of IT project delivery</li>
-            <li><i class="fa-solid fa-check-circle"></i> Review of proposals and project deliverables</li>
-            <li><i class="fa-solid fa-check-circle"></i> Advisory Board / Board of Directors participation</li>
-            <li><i class="fa-solid fa-check-circle"></i> IT expert on interview panels</li>
-            <li><i class="fa-solid fa-check-circle"></i> Guest speaker for internal or external events</li>
-            <li><i class="fa-solid fa-check-circle"></i> Mentorship and career guidance</li>
-        </ul>
-    </section>
-
-    <!-- IT AREAS -->
-    <section class="section-block">
-        <h2 class="section-title">IT Areas of Engagement</h2>
-        <p class="lead-text">
-            We help organizations extract value from IT by aligning technology with improved business practices.
-        </p>
-
-        <div class="learning-grid">
-            <div class="learn-card">
-                <h4>Core IT & Architecture</h4>
-                <p>Enterprise architecture, ERP, CRM, IT strategy, data centers, networking, security, cloud infrastructure.</p>
+        <section id="engagement" class="svc-section">
+            <h2 class="svc-section-title">Engagement Options of our IT Advisors</h2>
+            <div class="svc-card-grid">
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-compass"></i></div>
+                    <h3>Strategic &amp; tactical advisory</h3>
+                    <p>Guidance for leaders on priorities, investments, and execution trade-offs.</p>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-circle-question"></i></div>
+                    <h3>Second opinion</h3>
+                    <p>Independent review before major IT investments or supplier commitments.</p>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-shield"></i></div>
+                    <h3>Quality assurance</h3>
+                    <p>Delivery assurance for programs, projects, and implementation partners.</p>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-file-signature"></i></div>
+                    <h3>Proposal review</h3>
+                    <p>Assessment of proposals, SOWs, and deliverables with risk and scope clarity.</p>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-people-group"></i></div>
+                    <h3>Board advisory</h3>
+                    <p>Participation as IT advisor for leadership, boards, and steering committees.</p>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-microphone-lines"></i></div>
+                    <h3>Speaking &amp; mentoring</h3>
+                    <p>Guest speaking, interview panels, and career mentorship for teams and leaders.</p>
+                </div>
             </div>
-            <div class="learn-card">
-                <h4>Digital & Data</h4>
-                <p>Big Data, analytics, AI/ML, IoT, blockchain, business intelligence, digital transformation.</p>
+        </section>
+
+        <section class="svc-section">
+            <h2 class="svc-section-title">IT Areas for Engagement of our IT Advisors</h2>
+            <p class="svc-lead">
+                We help organizations extract value from IT by aligning technology with improved business practices.
+            </p>
+            <div class="svc-card-grid">
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-sitemap"></i></div>
+                    <h3>Core IT &amp; Architecture</h3>
+                    <p>Enterprise architecture, ERP/CRM, IT strategy, data centers, networking, cloud, and security.</p>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-database"></i></div>
+                    <h3>Digital &amp; Data</h3>
+                    <p>Analytics, AI/ML, IoT, BI, big data platforms, and digital transformation.</p>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-gears"></i></div>
+                    <h3>Applications &amp; Automation</h3>
+                    <p>Software delivery, RPA, mobile apps, document systems, and automation roadmaps.</p>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-truck-ramp-box"></i></div>
+                    <h3>Operations &amp; Supply Chain</h3>
+                    <p>Manufacturing systems, SCM, transportation, HR/payroll, and process excellence.</p>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                    <h3>Marketing &amp; Branding</h3>
+                    <p>Business strategy, customer experience, brand positioning, and execution support.</p>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-people-arrows"></i></div>
+                    <h3>Transformation leadership</h3>
+                    <p>Operating models, org design, shared services, and end-to-end transformation programs.</p>
+                </div>
             </div>
-            <div class="learn-card">
-                <h4>Applications & Automation</h4>
-                <p>Software development, RPA, mobile apps, image processing, document management.</p>
+        </section>
+
+        <section class="svc-section">
+            <div class="svc-band">
+                <h3>Partner with Our IT Advisors</h3>
+                <p class="svc-lead" style="margin-top:0.25rem;">
+                    Whether you need strategic direction, independent advice, or transformation leadership—we’re ready.
+                </p>
+                <div class="svc-hero-cta">
+                    <a class="svc-btn-primary" href="https://almanet.in/contact/">
+                        Get in Touch <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a class="svc-btn-secondary" href="mailto:info@almanet.in">info@almanet.in</a>
+                </div>
+                <p style="margin-top:0.75rem;color:var(--text-secondary);">
+                    <strong>Phone:</strong> +91 6264643660 &nbsp;&nbsp; <strong>Email:</strong> info@almanet.in
+                </p>
             </div>
-            <div class="learn-card">
-                <h4>Operations & Supply Chain</h4>
-                <p>Manufacturing systems, SCM, transportation management, payroll, HR systems.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- OTHER SERVICES -->
-    <section class="section-block">
-        <h2 class="section-title">Marketing, Branding & Business Strategy</h2>
-        <p>
-            Our marketing and business consultants help organizations lead their markets through superior insight,
-            brand strategy, and execution.
-        </p>
-        <p>
-            From defining objectives to building customer-centric strategies, we support organizations at every stage
-            to improve brand value, customer engagement, and profitability.
-        </p>
-    </section>
-
-    <!-- BUSINESS TRANSFORMATION -->
-    <section class="section-block">
-        <h2 class="section-title">Redefine Your Business</h2>
-        <p class="lead-text">
-            Organizations that thrive embrace change and align with future realities.
-        </p>
-        <p>
-            We help define new strategic directions, design operating models, and provide leadership
-            across complex projects and transformation programs.
-        </p>
-    </section>
-
-    <!-- OPERATIONS & PEOPLE -->
-    <section class="section-block">
-        <h2 class="section-title">Business Operations & People Management</h2>
-        <p>
-            By understanding process, people, and technology, we help improve operational efficiency,
-            reduce costs, and enable continuous improvement.
-        </p>
-        <p>
-            Our consultants support organizational redesign, HR transformation,
-            shared services, and process optimization.
-        </p>
-    </section>
-
-    <!-- CTA -->
-    <section class="section-block">
-        <h2 class="section-title">Partner with Our IT Advisors</h2>
-        <p class="lead-text">
-            Whether you need strategic direction, independent advice, or transformation leadership,
-            Almanet Professional Services is your trusted advisory partner.
-        </p>
-
-        <div class="service-cta-wrapper">
-            <a href="https://almanet.in/contact/" class="btn-primary">Get in Touch</a>
-        </div>
-
-        <p style="margin-top:1rem;">
-            <strong>Phone:</strong> +91 6264643660<br>
-            <strong>Email:</strong> info@almanet.in
-        </p>
-    </section>
-
+        </section>
+    </div>
 </main>
 
 <!-- FOOTER -->
-<footer class="main-footer">
-    <div class="container footer-grid">
-        <div class="footer-col">
+<footer class="svc-footer">
+    <div class="container svc-footer-grid">
+        <div>
             <h5>Almanet Professional Services</h5>
-            <p>Empowering organizations and professionals with enterprise-grade IT solutions and training.</p>
+            <p>On-demand IT advisory services to improve decisions, reduce delivery risk, and accelerate value.</p>
         </div>
-        <div class="footer-col">
-            <h5>Quick Links</h5>
+        <div>
+            <h5>Services</h5>
             <ul>
-                <li><a href="../about.html">About Us</a></li>
-                <li><a href="../register.html">All Events</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
+                <li><a href="./it-advisory.html">IT Advisory</a></li>
+                <li><a href="./salesforce-services.html">Salesforce</a></li>
+                <li><a href="./sap-hana-services.html">SAP HANA Services</a></li>
+                <li><a href="./sap-staffing-services.html">SAP Staffing</a></li>
             </ul>
         </div>
-        <div class="footer-col">
+        <div>
+            <h5>Company</h5>
+            <ul>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../courses.html">Courses</a></li>
+                <li><a href="../register.html">Webinars</a></li>
+                <li><a href="https://almanet.in/contact/">Contact</a></li>
+            </ul>
+        </div>
+        <div>
             <h5>Contact</h5>
-            <p style="margin-bottom: 0.5rem;"><i class="fa-solid fa-location-dot"></i> 1 Snehalataganj, Indore, MP</p>
-            <p style="margin-bottom: 0.5rem;"><i class="fa-solid fa-envelope"></i> info@almanet.in</p>
-            <p><i class="fa-solid fa-phone"></i> +91 6264643660</p>
+            <ul>
+                <li><i class="fa-solid fa-location-dot"></i> 1 Snehalataganj, Indore, MP</li>
+                <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@almanet.in">info@almanet.in</a></li>
+                <li><i class="fa-solid fa-phone"></i> <a href="tel:+916264643660">+91 6264643660</a></li>
+            </ul>
         </div>
     </div>
-    <div class="footer-bottom">
-        <p>&copy; 2025 Almanet Professional Services. All rights reserved.</p>
+    <div class="container svc-footer-bottom">
+        <span>&copy; 2025 Almanet Professional Services. All rights reserved.</span>
+        <span><a href="../index.html">Back to Home</a></span>
     </div>
 </footer>
 

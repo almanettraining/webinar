@@ -7,6 +7,7 @@
     <meta name="description" content="Accelerate digital transformation with SAP HANA consulting services by Almanet. Implementation, migration, optimization, and SAP S/4HANA expertise.">
 
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./services.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +17,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body class="svc-page">
 
 <!-- HEADER -->
 <header class="main-header">
@@ -126,130 +127,203 @@
 </header>
 
 <!-- HERO -->
-<section class="services-hero">
+<section class="svc-hero" style="--svc-hero-bg: url('../image/sap-banner-3.webp');">
     <div class="container">
-        <div class="services-hero-content">
-            <h1 class="services-hero-title">SAP HANA Consulting Services</h1>
-            <p class="services-hero-subtitle">
-                Accelerate your digital transformation with real-time data, analytics, and enterprise-grade SAP HANA solutions.
+        <div>
+            <div class="svc-breadcrumbs">
+                <a href="../index.html">Home</a> / <a href="../index.html#services">Services</a> / SAP HANA Services
+            </div>
+            <h1>Accelerate Your Digital Transformation with SAP HANA Consulting Services</h1>
+            <p>
+                Unlock the power of real-time data and analytics with SAP HANA. From implementation and migration to
+                optimization and S/4HANA readiness, we help teams move faster—securely and predictably.
             </p>
+            <div class="svc-hero-cta">
+                <a class="svc-btn-primary" href="https://almanet.in/contact/">
+                    Talk to an Expert <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a class="svc-btn-secondary" href="#capabilities">
+                    Explore Capabilities
+                </a>
+            </div>
+        </div>
+
+        <div class="svc-hero-media">
+            <div class="svc-hero-card">
+                <img src="../image/saphana.png" alt="SAP HANA services and consulting">
+            </div>
         </div>
     </div>
 </section>
 
 <!-- MAIN CONTENT -->
-<main class="container" style="padding: var(--space-xl) 0;">
+<main class="svc-main">
+    <div class="container">
+        <section class="svc-section">
+            <h2 class="svc-section-title">Unlock the Power of Real-Time Data and Analytics</h2>
+            <p class="svc-lead">
+                SAP HANA is SAP’s in-memory database platform built for high-performance transactions and analytics.
+                We help you modernize architectures, accelerate reporting, and enable real-time decision-making.
+            </p>
 
-    <section class="section-block">
-        <h2 class="section-title">Unlock the Power of Real-Time Data & Analytics</h2>
-        <p class="lead-text">
-            At Almanet Professional Services, we help organizations harness the full potential of SAP HANA,
-            SAP’s in-memory database and analytics platform.
-        </p>
-        <p>
-            Whether you are implementing SAP HANA for the first time, migrating from legacy systems,
-            or optimizing an existing landscape, our experienced consultants help you achieve faster
-            decision-making, enhanced reporting, and superior system performance.
-        </p>
-    </section>
+            <div class="svc-grid-2">
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                    <h3>High-performance architecture</h3>
+                    <p>Design and configure environments that deliver predictable speed, stability, and scalability.</p>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3>Real-time insights</h3>
+                    <p>Enable analytics and dashboards that bring operational and financial insight closer to the business.</p>
+                </div>
+            </div>
+        </section>
 
-    <section class="section-block">
-        <h2 class="section-title">Our SAP HANA Consulting Services</h2>
-        <ul class="check-list">
-            <li><i class="fa-solid fa-check-circle"></i><strong>SAP HANA Implementation</strong> – End-to-end deployment, configuration, and integration for scalable, high-performance systems.</li>
-            <li><i class="fa-solid fa-check-circle"></i><strong>SAP HANA Migration</strong> – Secure, low-risk migration from legacy systems or SAP ECC to SAP S/4HANA.</li>
-            <li><i class="fa-solid fa-check-circle"></i><strong>Performance Optimization</strong> – Identify bottlenecks and improve speed, reliability, and efficiency.</li>
-            <li><i class="fa-solid fa-check-circle"></i><strong>Analytics & Reporting</strong> – Real-time dashboards and advanced analytics for faster insights.</li>
-            <li><i class="fa-solid fa-check-circle"></i><strong>SAP HANA Integration</strong> – Seamless ERP, CRM, and enterprise system integration.</li>
-            <li><i class="fa-solid fa-check-circle"></i><strong>SAP S/4HANA Roadmap</strong> – Readiness assessment, planning, and deployment guidance.</li>
-        </ul>
-    </section>
+        <section id="capabilities" class="svc-section">
+            <h2 class="svc-section-title">Our SAP HANA Consulting Services</h2>
+            <div class="svc-card-grid">
+                <article class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                    <h3>Implementation</h3>
+                    <p>End-to-end deployment, configuration, sizing, and integration tailored to your landscape.</p>
+                </article>
+                <article class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                    <h3>Migration</h3>
+                    <p>Secure migrations from legacy databases or SAP ECC with minimum downtime and risk control.</p>
+                </article>
+                <article class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <h3>Performance optimization</h3>
+                    <p>Bottleneck analysis, tuning, and best-practice remediation across DB, app, and reporting layers.</p>
+                </article>
+                <article class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-table-columns"></i></div>
+                    <h3>Analytics &amp; reporting</h3>
+                    <p>Dashboards and reporting enablement for executives and operations teams.</p>
+                </article>
+                <article class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-link"></i></div>
+                    <h3>Integration</h3>
+                    <p>Connect SAP and non-SAP systems for consistent data flows and reliable interfaces.</p>
+                </article>
+                <article class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-road"></i></div>
+                    <h3>S/4HANA roadmap</h3>
+                    <p>Readiness assessments, modernization planning, and guided S/4HANA adoption.</p>
+                </article>
+            </div>
+        </section>
 
-    <section class="section-block">
-        <h2 class="section-title">Why Choose Almanet Professional Services?</h2>
-        <ul class="check-list">
-            <li><i class="fa-solid fa-check-circle"></i> Certified SAP HANA consultants with enterprise experience</li>
-            <li><i class="fa-solid fa-check-circle"></i> Tailored solutions aligned to business goals</li>
-            <li><i class="fa-solid fa-check-circle"></i> Proven methodology with predictable delivery</li>
-            <li><i class="fa-solid fa-check-circle"></i> Focus on measurable business outcomes</li>
-        </ul>
-    </section>
+        <section class="svc-section">
+            <h2 class="svc-section-title">What You Can Achieve with SAP HANA</h2>
+            <ul class="svc-list">
+                <li><i class="fa-solid fa-circle-check"></i><span>Real-time operational reporting and analytics</span></li>
+                <li><i class="fa-solid fa-circle-check"></i><span>Simplified architecture and reduced data redundancy</span></li>
+                <li><i class="fa-solid fa-circle-check"></i><span>Accelerated ERP performance with S/4HANA</span></li>
+                <li><i class="fa-solid fa-circle-check"></i><span>Scalable foundation for predictive insights and automation</span></li>
+            </ul>
+        </section>
 
-    <section class="section-block">
-        <h2 class="section-title">SAP HANA Use Cases</h2>
-        <ul class="check-list">
-            <li><i class="fa-solid fa-check-circle"></i> Real-time analytics and operational reporting</li>
-            <li><i class="fa-solid fa-check-circle"></i> Predictive analytics and machine learning</li>
-            <li><i class="fa-solid fa-check-circle"></i> Simplified IT architecture and reduced costs</li>
-            <li><i class="fa-solid fa-check-circle"></i> Accelerated ERP performance with SAP S/4HANA</li>
-        </ul>
-    </section>
+        <section class="svc-section">
+            <h2 class="svc-section-title">How We Work</h2>
+            <div class="svc-card-grid">
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <h3>Discovery</h3>
+                    <p>Assess goals, constraints, and current-state architecture.</p>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                    <h3>Design</h3>
+                    <p>Define target architecture, sizing, security, and integration patterns.</p>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-rocket"></i></div>
+                    <h3>Deliver</h3>
+                    <p>Implement or migrate with rigorous testing and controlled cutover.</p>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Optimize</h3>
+                    <p>Operate, monitor, tune, and continuously improve performance and cost.</p>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-headset"></i></div>
+                    <h3>Support</h3>
+                    <p>Post go-live support and roadmap guidance for ongoing value.</p>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-handshake"></i></div>
+                    <h3>Advisory</h3>
+                    <p>Best-practice consulting aligned to measurable business outcomes.</p>
+                </div>
+            </div>
+        </section>
 
-    <section class="section-block">
-        <h2 class="section-title">Industries We Serve</h2>
-        <ul class="check-list">
-            <li><i class="fa-solid fa-check-circle"></i> Finance & Banking</li>
-            <li><i class="fa-solid fa-check-circle"></i> Retail</li>
-            <li><i class="fa-solid fa-check-circle"></i> Healthcare</li>
-            <li><i class="fa-solid fa-check-circle"></i> Manufacturing</li>
-            <li><i class="fa-solid fa-check-circle"></i> Energy & Utilities</li>
-        </ul>
-    </section>
-
-    <section class="section-block">
-        <h2 class="section-title">How We Work</h2>
-        <ul class="check-list">
-            <li><i class="fa-solid fa-check-circle"></i> Discovery & Assessment</li>
-            <li><i class="fa-solid fa-check-circle"></i> Custom Design & Planning</li>
-            <li><i class="fa-solid fa-check-circle"></i> Implementation & Migration</li>
-            <li><i class="fa-solid fa-check-circle"></i> Optimization & Ongoing Support</li>
-        </ul>
-    </section>
-
-    <section class="section-block">
-        <h2 class="section-title">Ready to Transform Your Business with SAP HANA?</h2>
-        <p class="lead-text">
-            Partner with Almanet Professional Services to unlock the full potential of SAP HANA
-            and drive your digital transformation.
-        </p>
-
-        <div class="service-cta-wrapper">
-            <a href="https://almanet.in/contact/" class="btn-primary">Get in Touch</a>
-        </div>
-
-        <p style="margin-top:1rem;">
-            <strong>Phone:</strong> +91 6264643660<br>
-            <strong>Email:</strong> info@almanet.in
-        </p>
-    </section>
-
+        <section class="svc-section">
+            <div class="svc-band">
+                <h3>Ready to Transform Your Business with SAP HANA?</h3>
+                <p class="svc-lead" style="margin-top:0.25rem;">
+                    Partner with Almanet Professional Services for SAP HANA consulting that’s built for enterprise delivery.
+                </p>
+                <div class="svc-hero-cta">
+                    <a class="svc-btn-primary" href="https://almanet.in/contact/">
+                        Get in Touch <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a class="svc-btn-secondary" href="mailto:info@almanet.in">
+                        info@almanet.in
+                    </a>
+                </div>
+                <p style="margin-top:0.75rem;color:var(--text-secondary);">
+                    <strong>Phone:</strong> +91 6264643660 &nbsp;&nbsp; <strong>Email:</strong> info@almanet.in
+                </p>
+            </div>
+        </section>
+    </div>
 </main>
 
-<!-- FOOTER -->
-<footer class="main-footer">
-    <div class="container footer-grid">
-        <div class="footer-col">
+<!-- FOOTER (service pages can differ) -->
+<footer class="svc-footer">
+    <div class="container svc-footer-grid">
+        <div>
             <h5>Almanet Professional Services</h5>
-            <p>Empowering organizations and professionals with enterprise-grade IT solutions and training.</p>
+            <p>
+                Enterprise consulting across SAP, Salesforce, and advisory services—focused on measurable outcomes and
+                reliable delivery.
+            </p>
         </div>
-        <div class="footer-col">
-            <h5>Quick Links</h5>
+        <div>
+            <h5>Services</h5>
             <ul>
-                <li><a href="../about.html">About Us</a></li>
-                <li><a href="../register.html">All Events</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
+                <li><a href="./sap-hana-services.html">SAP HANA Services</a></li>
+                <li><a href="./sap-successfactors.html">SAP SuccessFactors</a></li>
+                <li><a href="./sap-abap-development.html">SAP ABAP Development</a></li>
+                <li><a href="./salesforce-services.html">Salesforce</a></li>
             </ul>
         </div>
-        <div class="footer-col">
+        <div>
+            <h5>Company</h5>
+            <ul>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../courses.html">Courses</a></li>
+                <li><a href="../register.html">Webinars</a></li>
+                <li><a href="https://almanet.in/contact/">Contact</a></li>
+            </ul>
+        </div>
+        <div>
             <h5>Contact</h5>
-            <p style="margin-bottom: 0.5rem;"><i class="fa-solid fa-location-dot"></i> 1 Snehalataganj, Indore, MP</p>
-            <p style="margin-bottom: 0.5rem;"><i class="fa-solid fa-envelope"></i> info@almanet.in</p>
-            <p><i class="fa-solid fa-phone"></i> +91 6264643660</p>
+            <ul>
+                <li><i class="fa-solid fa-location-dot"></i> 1 Snehalataganj, Indore, MP</li>
+                <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@almanet.in">info@almanet.in</a></li>
+                <li><i class="fa-solid fa-phone"></i> <a href="tel:+916264643660">+91 6264643660</a></li>
+            </ul>
         </div>
     </div>
-    <div class="footer-bottom">
-        <p>&copy; 2025 Almanet Professional Services. All rights reserved.</p>
+    <div class="container svc-footer-bottom">
+        <span>&copy; 2025 Almanet Professional Services. All rights reserved.</span>
+        <span><a href="../index.html">Back to Home</a></span>
     </div>
 </footer>
 

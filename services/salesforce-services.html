@@ -7,6 +7,7 @@
     <meta name="description" content="Enterprise Salesforce consulting, customization, and development services by Almanet Professional Services.">
 
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./services.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +17,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body class="svc-page">
 
 <!-- HEADER -->
 <header class="main-header">
@@ -126,120 +127,159 @@
 </header>
 
 <!-- HERO -->
-<section class="services-hero">
+<section class="svc-hero" style="--svc-hero-bg: url('../image/sap-banner-3.webp');">
     <div class="container">
-        <div class="services-hero-content">
-            <h1 class="services-hero-title">Salesforce Consulting & Development</h1>
-            <p class="services-hero-subtitle">
-                Custom Salesforce solutions that drive efficiency, insights, and scalable business growth.
+        <div>
+            <div class="svc-breadcrumbs">
+                <a href="../index.html">Home</a> / <a href="../index.html#services">Services</a> / Salesforce
+            </div>
+            <h1>Salesforce Consulting &amp; Development</h1>
+            <p>
+                Results-driven Salesforce delivery—from Lightning Web Components and Apex development to automation,
+                reporting, and secure enterprise integrations.
             </p>
+            <div class="svc-hero-cta">
+                <a class="svc-btn-primary" href="https://almanet.in/contact/">
+                    Start a Conversation <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a class="svc-btn-secondary" href="#services">Our Services</a>
+            </div>
+        </div>
+
+        <div class="svc-hero-media">
+            <div class="svc-hero-card">
+                <img src="../image/SAP-banner-1024x331-1.jpg" alt="Salesforce consulting and development">
+            </div>
         </div>
     </div>
 </section>
 
 <!-- MAIN CONTENT -->
-<main class="container" style="padding: var(--space-xl) 0;">
+<main class="svc-main">
+    <div class="container">
+        <section class="svc-section">
+            <h2 class="svc-section-title">Results-Driven Salesforce Expertise</h2>
+            <p class="svc-lead">
+                We deliver high-impact Salesforce consulting, development, and customization aligned to your business goals.
+                From solution design to agile delivery, our focus is adoption, performance, and measurable outcomes.
+            </p>
+            <div class="svc-grid-2">
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <h3>Modern Salesforce builds</h3>
+                    <p>Lightning Web Components (LWC), Apex, and automation patterns built for maintainability.</p>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-chart-simple"></i></div>
+                    <h3>Insight &amp; adoption</h3>
+                    <p>Dashboards, reports, and training that help teams adopt workflows and make faster decisions.</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- INTRO -->
-    <section class="section-block">
-        <h2 class="section-title">Results-Driven Salesforce Expertise</h2>
-        <p class="lead-text">
-            Almanet Professional Services delivers high-impact Salesforce consulting, development, and customization
-            services tailored to your business goals.
-        </p>
-        <p>
-            Our Salesforce professionals have deep expertise in Lightning Web Components (LWC),
-            Apex, Triggers, and enterprise integrations—helping organizations across automotive,
-            IT, and services industries unlock the full value of Salesforce.
-        </p>
-    </section>
+        <section id="services" class="svc-section">
+            <h2 class="svc-section-title">Our Salesforce Services</h2>
+            <div class="svc-card-grid">
+                <article class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-gears"></i></div>
+                    <h3>App development</h3>
+                    <p>Salesforce application development and customization for your process needs.</p>
+                </article>
+                <article class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-layer-group"></i></div>
+                    <h3>Lightning Web Components</h3>
+                    <p>Reusable LWC components designed for performance and user experience.</p>
+                </article>
+                <article class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3>Apex &amp; automation</h3>
+                    <p>Apex classes, triggers, flows, and automation to streamline operations.</p>
+                </article>
+                <article class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-user-shield"></i></div>
+                    <h3>Security &amp; access</h3>
+                    <p>Profiles, roles, permission sets, and security configuration aligned with governance.</p>
+                </article>
+                <article class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-table-columns"></i></div>
+                    <h3>Reports &amp; dashboards</h3>
+                    <p>Operational and executive reporting that supports better decision-making.</p>
+                </article>
+                <article class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-plug-circle-bolt"></i></div>
+                    <h3>Integrations</h3>
+                    <p>Enterprise integrations and data flows that keep systems consistent and reliable.</p>
+                </article>
+            </div>
+        </section>
 
-    <!-- CORE SERVICES -->
-    <section class="section-block">
-        <h2 class="section-title">Our Salesforce Services</h2>
+        <section class="svc-section">
+            <h2 class="svc-section-title">Our Delivery Approach</h2>
+            <ul class="svc-list">
+                <li><i class="fa-solid fa-circle-check"></i><span>Agile, sprint-based delivery with frequent demos</span></li>
+                <li><i class="fa-solid fa-circle-check"></i><span>Close collaboration with business stakeholders</span></li>
+                <li><i class="fa-solid fa-circle-check"></i><span>Scalable architecture and maintainable implementations</span></li>
+                <li><i class="fa-solid fa-circle-check"></i><span>Quality checks, UAT support, and release readiness</span></li>
+            </ul>
+        </section>
 
-        <ul class="check-list">
-            <li><i class="fa-solid fa-check-circle"></i> Salesforce application development & customization</li>
-            <li><i class="fa-solid fa-check-circle"></i> Lightning Web Components (LWC) development</li>
-            <li><i class="fa-solid fa-check-circle"></i> Apex classes, triggers, and automation</li>
-            <li><i class="fa-solid fa-check-circle"></i> User, role, profile, and security configuration</li>
-            <li><i class="fa-solid fa-check-circle"></i> Custom reports and dashboards</li>
-            <li><i class="fa-solid fa-check-circle"></i> Salesforce data analysis and optimization</li>
-        </ul>
-    </section>
-
-    <!-- DELIVERY APPROACH -->
-    <section class="section-block">
-        <h2 class="section-title">Our Delivery Approach</h2>
-
-        <ul class="check-list">
-            <li><i class="fa-solid fa-check-circle"></i> Agile project management and sprint-based delivery</li>
-            <li><i class="fa-solid fa-check-circle"></i> Close collaboration with business stakeholders</li>
-            <li><i class="fa-solid fa-check-circle"></i> Continuous feedback and iterative improvement</li>
-            <li><i class="fa-solid fa-check-circle"></i> Scalable, maintainable Salesforce architectures</li>
-        </ul>
-    </section>
-
-    <!-- BUSINESS VALUE -->
-    <section class="section-block">
-        <h2 class="section-title">Business Value We Deliver</h2>
-        <p class="lead-text">
-            We go beyond implementation—focusing on measurable outcomes and long-term success.
-        </p>
-
-        <ul class="check-list">
-            <li><i class="fa-solid fa-check-circle"></i> Improved operational efficiency</li>
-            <li><i class="fa-solid fa-check-circle"></i> Data-driven decision-making</li>
-            <li><i class="fa-solid fa-check-circle"></i> Enhanced user adoption and experience</li>
-            <li><i class="fa-solid fa-check-circle"></i> Solutions aligned with customer growth goals</li>
-        </ul>
-    </section>
-
-    <!-- CTA -->
-    <section class="section-block">
-        <h2 class="section-title">Ready to Elevate Your Salesforce Platform?</h2>
-        <p class="lead-text">
-            Whether you need custom development, system optimization, or expert guidance,
-            Almanet Professional Services is your trusted Salesforce partner.
-        </p>
-
-        <div class="service-cta-wrapper">
-            <a href="https://almanet.in/contact/" class="btn-primary">Get in Touch</a>
-        </div>
-
-        <p style="margin-top:1rem;">
-            <strong>Phone:</strong> +91 6264643660<br>
-            <strong>Email:</strong> info@almanet.in
-        </p>
-    </section>
-
+        <section class="svc-section">
+            <div class="svc-band">
+                <h3>Ready to Elevate Your Salesforce Platform?</h3>
+                <p class="svc-lead" style="margin-top:0.25rem;">
+                    Whether you need custom development, optimization, or expert guidance—Almanet is your Salesforce partner.
+                </p>
+                <div class="svc-hero-cta">
+                    <a class="svc-btn-primary" href="https://almanet.in/contact/">
+                        Get in Touch <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a class="svc-btn-secondary" href="mailto:info@almanet.in">info@almanet.in</a>
+                </div>
+                <p style="margin-top:0.75rem;color:var(--text-secondary);">
+                    <strong>Phone:</strong> +91 6264643660 &nbsp;&nbsp; <strong>Email:</strong> info@almanet.in
+                </p>
+            </div>
+        </section>
+    </div>
 </main>
 
 <!-- FOOTER -->
-<footer class="main-footer">
-    <div class="container footer-grid">
-        <div class="footer-col">
+<footer class="svc-footer">
+    <div class="container svc-footer-grid">
+        <div>
             <h5>Almanet Professional Services</h5>
-            <p>Empowering organizations and professionals with enterprise-grade IT solutions and training.</p>
+            <p>Salesforce development, customization, and advisory services focused on outcomes and adoption.</p>
         </div>
-        <div class="footer-col">
-            <h5>Quick Links</h5>
+        <div>
+            <h5>Services</h5>
             <ul>
-                <li><a href="../about.html">About Us</a></li>
-                <li><a href="../register.html">All Events</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
+                <li><a href="./salesforce-services.html">Salesforce</a></li>
+                <li><a href="./sap-hana-services.html">SAP HANA Services</a></li>
+                <li><a href="./sap-successfactors.html">SAP SuccessFactors</a></li>
+                <li><a href="./it-advisory.html">IT Advisory</a></li>
             </ul>
         </div>
-        <div class="footer-col">
+        <div>
+            <h5>Company</h5>
+            <ul>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../courses.html">Courses</a></li>
+                <li><a href="../register.html">Webinars</a></li>
+                <li><a href="https://almanet.in/contact/">Contact</a></li>
+            </ul>
+        </div>
+        <div>
             <h5>Contact</h5>
-            <p style="margin-bottom: 0.5rem;"><i class="fa-solid fa-location-dot"></i> 1 Snehalataganj, Indore, MP</p>
-            <p style="margin-bottom: 0.5rem;"><i class="fa-solid fa-envelope"></i> info@almanet.in</p>
-            <p><i class="fa-solid fa-phone"></i> +91 6264643660</p>
+            <ul>
+                <li><i class="fa-solid fa-location-dot"></i> 1 Snehalataganj, Indore, MP</li>
+                <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@almanet.in">info@almanet.in</a></li>
+                <li><i class="fa-solid fa-phone"></i> <a href="tel:+916264643660">+91 6264643660</a></li>
+            </ul>
         </div>
     </div>
-    <div class="footer-bottom">
-        <p>&copy; 2025 Almanet Professional Services. All rights reserved.</p>
+    <div class="container svc-footer-bottom">
+        <span>&copy; 2025 Almanet Professional Services. All rights reserved.</span>
+        <span><a href="../index.html">Back to Home</a></span>
     </div>
 </footer>
 
