@@ -452,24 +452,6 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             eligibility: 'Basic programming knowledge is helpful. Freshers and working professionals can enroll.',
             tools: ['SAP GUI', 'ABAP Development Tools (ADT)', 'Eclipse (ADT)', 'S/4HANA concepts']
-        },
-        'salesforce-training': {
-            title: 'Salesforce Training',
-            icon: 'fa-brands fa-salesforce',
-            description: 'Practical Salesforce Admin and Developer training covering configuration, automation, security, and Lightning development so you can contribute to real CRM projects.',
-            duration: '3–4 Months',
-            level: 'Beginner → Intermediate',
-            topics: [
-                'Salesforce org setup, objects, fields, and relationships',
-                'User management, security model, profiles & permission sets',
-                'Automation with Workflow, Process Builder, and Flows',
-                'Reports, dashboards, and data management best practices',
-                'Apex basics: classes, triggers, and governor limits',
-                'Lightning Web Components fundamentals and component architecture',
-                'Deployment, sandboxes, and change set best practices'
-            ],
-            eligibility: 'Ideal for freshers and professionals interested in CRM, admin, or Salesforce developer roles. Basic programming or business process knowledge is helpful but not mandatory.',
-            tools: ['Salesforce Platform', 'Lightning App Builder', 'Apex', 'Lightning Web Components']
         }
     };
 
